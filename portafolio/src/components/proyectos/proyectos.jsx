@@ -7,6 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 import Avatar from '@mui/material/Avatar';
+import Grow from '@mui/material/Grow';
+import Fade from '@mui/material/Fade';
 import './Proyectos.css'; // Importa el archivo CSS
 
 import proyectos from '../../assets/json/proyectos.json';
@@ -14,17 +16,20 @@ import proyectos from '../../assets/json/proyectos.json';
 function Proyectos() {
   return (
     <div>
-        <Typography variant="h4" component="h2" gutterBottom align="center">
-            Proyectos Destacados
-        </Typography>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1, padding:{xs:4,sm:3,md:4} }}>
+            <Fade in={true} timeout={1500}>
+                <Typography variant="h4" component="h2" gutterBottom align="center" sx={{paddingBottom:2}}>
+                    Proyectos Destacados
+                </Typography>
+            </Fade>
+        <Grow in={true} timeout={1000}>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {proyectos.map((proyecto) => (
-            <Grid item xs={2} sm={4} md={4} key={proyecto.id}>
+            <Grid item xs={2} sm={4} md={3} key={proyecto.id}>
                 <Card className="card">
                     <CardMedia
                         component="img"
-                        height="170"
+                        height="300px"
                         image="https://via.placeholder.com/200"
                         alt={proyecto.nombre}
                         className="card-media"
@@ -59,7 +64,7 @@ function Proyectos() {
                                         ''
                                     } 
                                     sx={{
-                                        border: '1px solid #f2f2f2', color:'white', // Añade un borde de 1px de color negro
+                                        border: '1px solid #f2f2f2', color:'white',  // Añade un borde de 1px de color negro
                                     }}
                                 />
                             ))}
@@ -69,6 +74,7 @@ function Proyectos() {
             </Grid>
             ))}
         </Grid>
+        </Grow>
         </Box>
     </div>
   );

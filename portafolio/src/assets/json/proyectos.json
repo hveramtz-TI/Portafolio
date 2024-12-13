@@ -58,5 +58,25 @@
       }
     ],
     "url": "https://www.proyectoC.com"
+  },
+  {
+    "id": 4,
+    "nombre": "Proyecto D",
+    "descripcion": "Este es un proyecto ficticio D.",
+    "tecnologias": [
+      {
+        "nombre": "Svelte",
+        "icono": "/src/assets/icons/svelte-icon.png"
+      },
+      {
+        "nombre": "Flask",
+        "icono": "/src/assets/icons/flask-icon.png"
+      },
+      {
+        "nombre": "SQLite",
+        "icono": "/src/assets/icons/sqlite-icon.png"
+      }
+    ],
+    "url": "https://www.proyectoD.com"
   }
 ]
