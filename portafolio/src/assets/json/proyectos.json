@@ -17,7 +17,8 @@
         "icono": "/src/assets/icons/mongodb-icon.png"
       }
     ],
-    "url": "https://www.proyectoA.com"
+    "url": "https://www.proyectoA.com",
+    "imagen": "/public/img/EasyEconomy3.jpeg"
   },
   {
     "id": 2,
@@ -37,7 +38,8 @@
         "icono": "/src/assets/icons/mysql-icon.png"
       }
     ],
-    "url": "https://www.proyectoB.com"
+    "url": "https://www.proyectoB.com",
+    "imagen": null
   },
   {
     "id": 3,
@@ -57,7 +59,8 @@
         "icono": "/src/assets/icons/postgresql-icon.png"
       }
     ],
-    "url": "https://www.proyectoC.com"
+    "url": "https://www.proyectoC.com",
+    "imagen": null
   },
   {
     "id": 4,
@@ -77,6 +80,7 @@
         "icono": "/src/assets/icons/sqlite-icon.png"
       }
     ],
-    "url": "https://www.proyectoD.com"
+    "url": "https://www.proyectoD.com",
+    "imagen": null
   }
 ]

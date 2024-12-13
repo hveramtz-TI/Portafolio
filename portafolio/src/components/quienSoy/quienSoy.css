@@ -1,48 +1,64 @@
 /* Estilos para chips */
 .chip-email {
-  background-color: #ffffff;
-  color: black;
-  border: 1px solid #000000;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff !important;
+  color: black !important;
+  border: 1px solid #000000 !important;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .chip-email:hover {
-  background-color: #b9b9b9;
-  color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #b9b9b9 !important;
+  color: white !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
 }
 
 .chip-github {
-  background-color: #060202;
-  color: white;
-  border: 1px solid #000;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #060202 !important;
+  color: white !important;
+  border: 1px solid #000 !important;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .chip-github:hover {
-  background-color: #620296;
-  color: white;
-  box-shadow: 0 0 10px rgba(98, 2, 150, 0.5);
+  background-color: #620296 !important;
+  color: white !important;
+  box-shadow: 0 0 10px rgba(98, 2, 150, 0.5) !important;
+}
+
+.chip-github .MuiChip-icon {
+  transition: color 0.3s ease !important; /* Añade transición al color del icono */
+}
+
+.chip-github:hover .MuiChip-icon {
+  color: white !important; /* Cambia el color del icono a blanco al hacer hover */
 }
 
 .chip-linkedin {
-  background-color: #0077b5;
-  color: white;
-  border: 1px solid #005582;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #005f92 !important;
+  color: white !important;
+  border: 1px solid #005582 !important;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .chip-linkedin:hover {
-  background-color: #005582;
-  color: white;
-  box-shadow: 0 0 10px rgba(0, 119, 181, 0.5);
+  background-color: #0085cc !important;
+  color: white !important;
+  box-shadow: 0 0 10px rgba(0, 119, 181, 0.5) !important;
+}
+
+.chip-linkedin .MuiChip-icon {
+  transition: color 0.3s ease !important; /* Añade transición al color del icono */
+}
+
+.chip-linkedin:hover .MuiChip-icon {
+  color: white !important; /* Cambia el color del icono a blanco al hacer hover */
 }
 
 /* Efecto de hover para el avatar en el icono */
 .chip-avatar {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
 }
 
 .chip-avatar:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
 }

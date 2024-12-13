@@ -30,7 +30,7 @@ function Proyectos() {
                     <CardMedia
                         component="img"
                         height="300px"
-                        image="https://via.placeholder.com/200"
+                        image={proyecto.imagen ? proyecto.imagen : "https://via.placeholder.com/200"}
                         alt={proyecto.nombre}
                         className="card-media"
                     />
