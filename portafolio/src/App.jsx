@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Proyectos from './components/proyectos/proyectos'
 import Box from '@mui/material/Box'
+import QuienSoy from './components/quienSoy/quienSoy'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,13 +10,16 @@ function App() {
   return (
     <Box 
       className='App' 
-      display="flex" 
+      display="block" 
       justifyContent="center" 
-      alignItems="center" 
-      height="100vh"
+      alignItems="center"
     >
-      <div className='proyectos'></div>
-      <Proyectos />
+      <div className='quienSoy'>
+        <QuienSoy />
+      </div>
+      <div className='proyectos'>
+        <Proyectos />
+      </div>
     </Box>
   )
 }

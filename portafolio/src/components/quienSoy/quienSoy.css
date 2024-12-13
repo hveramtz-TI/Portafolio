@@ -1,0 +1,48 @@
+/* Estilos para chips */
+.chip-email {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #000000;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chip-email:hover {
+  background-color: #b9b9b9;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chip-github {
+  background-color: #060202;
+  color: white;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chip-github:hover {
+  background-color: #620296;
+  color: white;
+  box-shadow: 0 0 10px rgba(98, 2, 150, 0.5);
+}
+
+.chip-linkedin {
+  background-color: #0077b5;
+  color: white;
+  border: 1px solid #005582;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chip-linkedin:hover {
+  background-color: #005582;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 119, 181, 0.5);
+}
+
+/* Efecto de hover para el avatar en el icono */
+.chip-avatar {
+  transition: transform 0.3s ease;
+}
+
+.chip-avatar:hover {
+  transform: scale(1.1);
+}

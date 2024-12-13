@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.87);
   background-color: #060202;
-  overflow: hidden; /* Evita el scroll */
+  overflow: auto; /* Permite el scroll */
 }
 
 .video-background {
@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.93); /* Filtro oscuro */
+  background: rgba(0, 0, 0, 0.94); /* Filtro oscuro */
   z-index: -1; /* Asegura que el filtro esté detrás del contenido pero delante del video */
 }
 

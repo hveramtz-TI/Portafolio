@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid'; // Asegúrate de importar desde @mui/material/Grid
+import Grid2 from '@mui/material/Grid2'; // Asegúrate de importar desde @mui/material/Grid
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -23,9 +23,9 @@ function Proyectos() {
                 </Typography>
             </Fade>
         <Grow in={true} timeout={1000}>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid2 container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {proyectos.map((proyecto) => (
-            <Grid item xs={2} sm={4} md={3} key={proyecto.id}>
+            <Grid2 item xs={2} sm={4} md={3} key={proyecto.id}>
                 <Card className="card">
                     <CardMedia
                         component="img"
@@ -71,9 +71,9 @@ function Proyectos() {
                         </Box>
                     </CardContent>
                 </Card>
-            </Grid>
+            </Grid2>
             ))}
-        </Grid>
+        </Grid2>
         </Grow>
         </Box>
     </div>
