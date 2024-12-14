@@ -45,11 +45,27 @@ function App() {
 
   return (
     <Box className="App">
-      <video ref={videoRef1} className="video-background" autoPlay loop muted>
-        <source src="/background/battlefieldShangai.mp4" type="video/mp4" />
+      <video
+        ref={videoRef1}
+        className="video-background"
+        autoPlay
+        loop
+        muted
+        preload="auto" // Preload para mejorar tiempos de carga
+        poster="/path/to/poster1.jpg" // Imagen de poster mientras se carga el video
+      >
+        <source src="/video/battlefieldShangai.mp4" type="video/mp4" />
       </video>
-      <video ref={videoRef2} className="video-background hidden" autoPlay loop muted>
-        <source src="/background/battlefieldAeropuerto.mp4" type="video/mp4" />
+      <video
+        ref={videoRef2}
+        className="video-background hidden"
+        autoPlay
+        loop
+        muted
+        preload="auto" // Preload para mejorar tiempos de carga
+        poster="/path/to/poster2.jpg" // Imagen de poster mientras se carga el video
+      >
+        <source src="/video/battlefieldAeropuerto.mp4" type="video/mp4" />
       </video>
       <div className="quienSoy">
         <QuienSoy />

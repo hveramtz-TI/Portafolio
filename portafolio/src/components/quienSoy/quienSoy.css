@@ -63,3 +63,42 @@
   transform: scale(1.1) !important;
 }
 
+/* Efecto de iluminación al hacer hover en una card */
+.card-hover {
+  transition: box-shadow 0.6s ease !important;
+}
+
+.card-hover:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8) !important;
+}
+
+.parrafo {
+  margin: 0%;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 600px) {
+  .card-hover {
+    width: 100% !important; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+    padding: 0rem !important; /* Ajusta el padding */
+  }
+
+  .card-hover .MuiCardContent-root {
+    padding: 1rem !important; /* Ajusta el padding del contenido */
+  }
+
+  .parrafo {
+    font-size: 0.9rem !important; /* Ajusta el tamaño de la fuente */
+    line-height: 1.4 !important; /* Ajusta la altura de línea */
+    padding: 5%;
+  }
+
+  .MuiAvatar-root {
+    width: 150px !important; /* Ajusta el tamaño del avatar */
+    height: 150px !important; /* Ajusta el tamaño del avatar */
+  }
+
+  .MuiCardHeader-root {
+    text-align: center !important; /* Centra el texto del encabezado */
+  }
+}

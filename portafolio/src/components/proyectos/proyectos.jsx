@@ -33,6 +33,7 @@ function Proyectos() {
                         image={proyecto.imagen ? proyecto.imagen : "https://via.placeholder.com/200"}
                         alt={proyecto.nombre}
                         className="card-media"
+                        loading="lazy" // Añade carga diferida
                     />
                     <Typography gutterBottom variant="h5" component="div" className="card-title">
                         {proyecto.nombre}
