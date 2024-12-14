@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid2, Avatar, Card, CardHeader, Chip, CardContent, Box, Grow } from '@mui/material'
+import { Container, Grid2, Avatar, Card, CardHeader, Chip, CardContent, Box, Grow, autocompleteClasses } from '@mui/material'
 import { Email, GitHub, LinkedIn } from '@mui/icons-material'
 import contactos from '../../assets/json/contacto.json'
 import './quienSoy.css' // Importa el archivo CSS
@@ -10,7 +10,7 @@ function QuienSoy() {
             <Container sx={{ alignContent: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 7 }}>
                 <Grid2 container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Grid2 item xs={2} sm={4} md={3}>
-                        <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: 350 }}>
+                        <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '350px' }}>
                             <Avatar src="https://via.placeholder.com/200" alt="Foto de perfil" sx={{ width: 200, height: 200 }} />
                             <CardHeader title="Hector Vera Martinez" subheader="Ingeniero de Ejecucion en Informatica" />
                             <CardContent sx={{ padding: '0px', paddingBottom: '0px !important' }}>
@@ -40,13 +40,13 @@ function QuienSoy() {
                             </CardContent>
                         </Card>
                     </Grid2>
-                    <Grid2 item xs={2} sm={4} md={3}>
+                    <Grid2 item xs={2} sm={4} md={3} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                         <Grow in={true}>
-                            <Card sx={{ padding: 2 }}>
+                            <Card sx={{ padding: 2 , heigh: '350px'}}>
                                 <h1>¿Quién soy?</h1>
                                 <p>Primero que nada. Hola,¿Como estas? :D</p>
                                 <p>En la actualidad tengo 23 años</p>
-                                <p>Desse </p>
+                                <p>Jesse, ¿Que es scrotolamo? </p>
                             </Card>
                         </Grow>
                     </Grid2>
