@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid2, Avatar, Card, CardHeader, Chip, CardContent, Box } from '@mui/material'
+import { Container, Grid2, Avatar, Card, CardHeader, Chip, CardContent, Box, Grow } from '@mui/material'
 import { Email, GitHub, LinkedIn } from '@mui/icons-material'
 import contactos from '../../assets/json/contacto.json'
 import './quienSoy.css' // Importa el archivo CSS
@@ -7,7 +7,7 @@ import './quienSoy.css' // Importa el archivo CSS
 function QuienSoy() {
     return (
         <div>
-            <Container sx={{ alignContent: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 2 }}>
+            <Container sx={{ alignContent: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 7 }}>
                 <Grid2 container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Grid2 item xs={2} sm={4} md={3}>
                         <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: 350 }}>
@@ -41,12 +41,14 @@ function QuienSoy() {
                         </Card>
                     </Grid2>
                     <Grid2 item xs={2} sm={4} md={3}>
-                        <Card sx={{ padding: 2 }}>
-                            <h1>¿Quién soy?</h1>
-                            <p>Primero que nada. Hola,¿Como estas? :D</p>
-                            <p>En la actualidad tengo 23 años</p>
-                            <p>Desse </p>
-                        </Card>
+                        <Grow in={true}>
+                            <Card sx={{ padding: 2 }}>
+                                <h1>¿Quién soy?</h1>
+                                <p>Primero que nada. Hola,¿Como estas? :D</p>
+                                <p>En la actualidad tengo 23 años</p>
+                                <p>Desse </p>
+                            </Card>
+                        </Grow>
                     </Grid2>
                 </Grid2>
             </Container>

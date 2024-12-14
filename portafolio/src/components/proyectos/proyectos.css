@@ -99,11 +99,11 @@
 @media (max-width: 600px) {
   .card {
     width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
+    height: 100%; /* Ajusta la altura automáticamente */
   }
 
   .card-media {
-    height: auto; /* Ajusta la altura de la imagen automáticamente */
+    height: 20vh; /* Ajusta la altura de la imagen automáticamente */
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
   }
@@ -117,5 +117,7 @@
   .card-content {
     top: 40px; /* Ajusta la posición del contenido */
     padding: 10px; /* Ajusta el padding del contenido */
+    overflow-y: auto; /* Añade scroll vertical */
+    max-height: 200px; /* Ajusta la altura máxima del contenido */
   }
 }
