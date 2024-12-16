@@ -1,29 +1,20 @@
-.certificados-container {
-  padding: 16px;
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.certificados-slider {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.certificado-card {
-  max-width: 345px;
-  padding: 16px;
-  margin: auto;
+@media (max-width: 1024px) {
+  .certificados-slider .slick-slide {
+    padding: 0 10px;
+  }
 }
 
-.certificado-media {
-  object-fit: contain;
-}
-
-.certificado-content {
-  text-align: center;
-  padding-bottom: 0 !important;
-}
-
-/* Estilos responsivos */
 @media (max-width: 600px) {
-  .certificado-card {
+  .certificados-slider .slick-slide {
+    padding: 0 5px;
+  }
+  
+  .certificados-slider .MuiCard-root {
     max-width: 100%;
   }
 }

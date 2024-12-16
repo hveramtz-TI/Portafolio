@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from 'react-slick'; // Importa el carrusel
 import certificados from '../../assets/json/certificados.json';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -6,30 +7,38 @@ import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 
 function Certificados() {
+  // Configuración del carrusel
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
-      {certificados.map((certificado, index) => (
-        <Card key={index} sx={{ maxWidth: 345, padding: 2, backgroundColor: 'rgb(255,255,255,0.8)', border: '1px solid #060202', borderRadius: '20px' }}>
-          <CardMedia
-            component="img"
-            height="140"
-            image={certificado.imagen}
-            alt={certificado.titulo}
-            sx={{ objectFit: 'contain' }}
-          />
-          <CardContent sx={{ textAlign: 'center', paddingBottom: '0 !important' }}>
-            <Typography variant="h6" component="div">
-              {certificado.titulo}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {certificado.entidad}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Expedición: {certificado.expedicion}
-            </Typography>
-          </CardContent>
-        </Card>
-      ))}
+    <div>
+      <Typography variant="h4" component="h2" gutterBottom align="center" sx={{ padding: 2 }}>
+        Certificados
+      </Typography>
+      
     </div>
   );
 }
