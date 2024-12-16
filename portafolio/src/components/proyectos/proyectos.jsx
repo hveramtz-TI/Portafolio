@@ -18,7 +18,7 @@ function Proyectos() {
     <div>
         <Box sx={{ flexGrow: 1, padding:{xs:4,sm:3,md:4} }}>
             <Fade in={true} timeout={1500}>
-                <Typography variant="h4" component="h2" gutterBottom align="center" sx={{paddingBottom:2}}>
+                <Typography variant="h4" component="h2" gutterBottom align="center" sx={{paddingBottom:2, color: 'white'}}>
                     Proyectos Destacados
                 </Typography>
             </Fade>
@@ -35,7 +35,7 @@ function Proyectos() {
                         className="card-media"
                         loading="lazy" // Añade carga diferida
                     />
-                    <Typography gutterBottom variant="h5" component="div" className="card-title">
+                    <Typography gutterBottom variant="h5" component="div" className="card-title" sx={{color: 'white', backgroundColor: '#000000'}} >
                         {proyecto.nombre}
                     </Typography>
                     <CardContent className="card-content">

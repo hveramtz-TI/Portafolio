@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Grid2, Avatar, Card, CardHeader, Chip, CardContent, Box, Grow } from '@mui/material'
 import { Email, GitHub, LinkedIn } from '@mui/icons-material'
+import imgPerfil from '/img/the-gigachad-v0-0wlf07gr2wsc1.webp'
 import contactos from '../../assets/json/contacto.json'
 import './quienSoy.css' // Importa el archivo CSS
 
@@ -11,7 +12,7 @@ function QuienSoy() {
                 <Grid2 container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     <Grid2 item xs={2} sm={4} md={3}>
                         <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '380px', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
-                            <Avatar src="https://via.placeholder.com/200" alt="Foto de perfil" sx={{ width: 200, height: 200 }} />
+                            <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: 200, height: 200 }} />
                             <CardHeader title="Hector Vera Martinez" subheader="Ingeniero de Ejecucion en Informatica" />
                             <CardContent sx={{ padding: '0px !important' }}>
                                 <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1, mt: 0 }}>
