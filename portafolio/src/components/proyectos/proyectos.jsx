@@ -57,6 +57,7 @@ function Proyectos() {
                                                     objectFit: 'contain' // Asegura que la imagen se ajuste sin recortarse
                                                 }
                                             }}
+                                            sx={{ width: '24px !important', height: '24px !important'}} // Ajusta el tamaño del avatar
                                         />
                                     }
                                     className={
