@@ -1,0 +1,29 @@
+.certificados-container {
+  padding: 16px;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certificado-card {
+  max-width: 345px;
+  padding: 16px;
+  margin: auto;
+}
+
+.certificado-media {
+  object-fit: contain;
+}
+
+.certificado-content {
+  text-align: center;
+  padding-bottom: 0 !important;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .certificado-card {
+    max-width: 100%;
+  }
+}

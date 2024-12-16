@@ -60,3 +60,22 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.certificados-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  scroll-snap-align: start;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.certificados-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

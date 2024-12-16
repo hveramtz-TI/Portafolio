@@ -1,0 +1,21 @@
+[
+    {
+        "titulo": "CCNA: Introduction to Networks",
+        "entidad": "Cisco",
+        "expedicion": "jul. 2023",
+        "imagen": "/img/CCNAITN__1_.png"
+    },
+    {
+        "titulo": "Azure Space: Diversity in STEM Challenge Completion Badge",
+        "entidad": "Microsoft",
+        "expedicion": "jun. 2023",
+        "imagen": "/img/AzureSpace.png",
+        "aptitudes": ["Python", "Microsoft Azure"]
+    },
+    {
+        "titulo": "Curos Excel y Power BI - Analisis y Visualizacion de Datos",
+        "entidad": "Udemy",
+        "expedicion": "feb. 2023",
+        "imagen": "/img/udemy_logo.png"
+    }
+]
