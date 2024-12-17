@@ -1,20 +1,81 @@
-.certificados-slider {
-  max-width: 1200px;
-  margin: 0 auto;
+.certificados h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
 }
 
-@media (max-width: 1024px) {
-  .certificados-slider .slick-slide {
-    padding: 0 10px;
+.certificados 
+{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.certificados .MuiCard-root {
+  max-width: 250px;
+  height: 270px;
+  border: 5px solid #f0f0f0;
+  border-radius: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.certificados .MuiCardContent-root .MuiTypography-root {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .certificados h2 {
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 600px) {
-  .certificados-slider .slick-slide {
-    padding: 0 5px;
+.certificados .MuiBox-root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Ajustes para las tarjetas en pantallas pequeñas */
+@media (max-width: 768px) {
+  .certificados .MuiCard-root {
+    max-width: 40% !important;
+    margin: 8px auto;
+    height: fit-content;
   }
-  
-  .certificados-slider .MuiCard-root {
-    max-width: 100%;
+  .certificados
+  {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .certificados .MuiCard-root {
+    max-width:45% !important;
+    max-height: min-content;
+    border: 5px solid #f0f0f0;
+    border-radius: 20px;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .certificados .MuiCardContent-root .MuiTypography-root
+  {
+    font-size: 0.9rem;
+  }
+
+  .certificados .MuiCardMedia-root
+  {
+    height: 100px;
+
+  }
+
+  .certificados .MuiBox-root
+  {
+    gap:10px;
+  }
+
+  .MuiAvatar-root {
+    width: 20px !important;
+    height: 20px !important;
   }
 }

@@ -4,8 +4,6 @@ import videoLoading from '/video/coalscence.mp4';
 import { LinearProgress } from '@mui/material';
 import { useEffect, useState } from 'react';
 import './index.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import App from './App.jsx';
 
 function LoadingScreen() {

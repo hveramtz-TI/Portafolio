@@ -1,44 +1,38 @@
 import React from 'react';
-import Slider from 'react-slick'; // Importa el carrusel
 import certificados from '../../assets/json/certificados.json';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
+import { Box, Chip, Avatar } from '@mui/material';
+import './certificados.css';
 
 function Certificados() {
-  // Configuración del carrusel
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   return (
-    <div>
-      <Typography variant="h4" component="h2" gutterBottom align="center" sx={{ padding: 2 }}>
+    <div className='certificados'>
+      <Typography variant="h4" component="h2" gutterBottom align="center">
         Certificados
       </Typography>
-      
+      <Box sx={{ display: 'flex', flexWrap:'wrap', gap: 2, justifyContent: 'center' , height: '100%' }}>
+        {certificados.map((certificado) => (
+          <Card key={certificado.id} sx={{ maxWidth: 300, margin: 2 }}>
+            <CardMedia
+              component="img"
+              height="140"              
+              image={certificado.imagen}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {certificado.titulo}
+              </Typography>
+              <Chip 
+                avatar={<Avatar src={certificado.iconoEntidad} sx={{ width: 24, height: 24, borderRadius: '50%', objectFit: 'cover' }} />} 
+                label={certificado.entidad} />
+            </CardContent>
+          </Card>
+        ))}
+      </Box>
     </div>
   );
 }

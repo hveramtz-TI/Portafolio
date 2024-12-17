@@ -2,25 +2,28 @@
     {
         "titulo": "CCNA: Introduction to Networks",
         "entidad": "Cisco",
+        "iconoEntidad": "/img/iconoCisco.svg",
         "expedicion": "jul. 2023",
         "imagen": "/img/CCNAITN__1_.png"
     },
     {
         "titulo": "Azure Space: Diversity in STEM Challenge Completion Badge",
         "entidad": "Microsoft",
+        "iconoEntidad": "/img/iconoMicrosoft.png",
         "expedicion": "jun. 2023",
-        "imagen": "/img/AzureSpace.png",
-        "aptitudes": ["Python", "Microsoft Azure"]
+        "imagen": "/img/AzureSpace.png"
     },
     {
         "titulo": "Curos Excel y Power BI - Analisis y Visualizacion de Datos",
         "entidad": "Udemy",
+        "iconoEntidad": "/img/logoUdemy.png",
         "expedicion": "feb. 2023",
         "imagen": "/img/udemy_logo.png"
     },
     {
         "titulo": "Habilidades Comunicativas : Mejora Tu Comunicacion",
         "entidad": "Udemy",
+        "iconoEntidad": "/img/logoUdemy.png",
         "expedicion": "feb. 2023",
         "imagen": "/img/udemy_logo.png"
     }
