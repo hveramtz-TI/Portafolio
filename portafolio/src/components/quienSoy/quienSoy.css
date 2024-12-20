@@ -78,6 +78,21 @@
 
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 600px) {
+  .quien-soy .MuiContainer-root {
+    flex-direction: column;
+  }
+
+  .quien-soy .MuiAvatar-root
+  {
+    width: 100px !important; /* Ajusta el ancho de la imagen del avatar */
+    height: 100px !important; /* Ajusta la altura de la imagen del avatar */
+  }
+
+  .quien-soy .MuiCardHeader-root
+  {
+    padding: 0.5rem !important; /* Ajusta el padding del encabezado de la tarjeta */
+  }
+
   .card-hover {
     width: 100% !important; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
     padding: 0rem !important; /* Ajusta el padding */
@@ -88,14 +103,9 @@
   }
 
   .parrafo {
-    font-size: 0.9rem !important; /* Ajusta el tamaño de la fuente */
+    font-size: 1rem !important; /* Ajusta el tamaño de la fuente */
     line-height: 1.4 !important; /* Ajusta la altura de línea */
-    padding: 5%;
-  }
-
-  .MuiAvatar-root {
-    width: 150px !important; /* Ajusta el tamaño del avatar */
-    height: 150px !important; /* Ajusta el tamaño del avatar */
+    padding: 0%;
   }
 
   .MuiCardHeader-root {

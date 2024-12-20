@@ -1,0 +1,94 @@
+[
+    {
+        "nombre": "Visual Studio Code",
+        "icono": "/img/tecnologiaswebp/visualstudiocode.webp"
+    },
+    {
+        "nombre": "NetBeans",
+        "icono": "/img/tecnologiaswebp/netbeans.webp"
+    },
+    {
+        "nombre": "Android Studio",
+        "icono": "/img/tecnologiaswebp/androidstudio.webp"
+    },
+    {
+        "nombre": "PostgreSQL",
+        "icono": "/img/tecnologiaswebp/postgresql.webp"
+    },
+    {
+        "nombre": "phpMyAdmin",
+        "icono": "/img/tecnologiaswebp/phpmyadmin.webp"
+    },
+    {
+        "nombre": "MySQL",
+        "icono": "/img/tecnologiaswebp/mysql.webp"
+    },
+    {
+        "nombre": "React.js",
+        "icono": "/img/tecnologiaswebp/reactjs.webp"
+    },
+    {
+        "nombre": "Kotlin",
+        "icono": "img/tecnologiaswebp/kotlin.webp"
+    },
+    {
+        "nombre": "C",
+        "icono": "img/tecnologiaswebp/c.webp"
+    },
+    {
+        "nombre": "C++",
+        "icono": "img/tecnologiaswebp/c++.webp"
+    },
+    {
+        "nombre": "Java",
+        "icono": "img/tecnologiaswebp/java.webp"
+    },
+    {
+        "nombre": "JavaScript",
+        "icono": "/img/tecnologiaswebp/javascript.webp"
+    },
+    {
+        "nombre": "Boostrap",
+        "icono": "/img/tecnologiaswebp/boostrap.webp"
+    },
+    {
+        "nombre": "HTML",
+        "icono": "/img/tecnologiaswebp/html.webp"
+    },
+    {
+        "nombre": "CSS",
+        "icono": "/img/tecnologiaswebp/css.webp"
+    },
+    {
+        "nombre": "Github",
+        "icono": "/img/tecnologiaswebp/github.webp"
+    },
+    {
+        "nombre": "Git",
+        "icono": "/img/tecnologiaswebp/git.webp"
+    },
+    {
+        "nombre": "Node.js",
+        "icono": "/img/tecnologias/nodejs.svg"
+    },
+    {
+        "nombre": "Express.js",
+        "icono": "/img/tecnologiaswebp/express.webp"
+    },
+    {
+        "nombre": "sequelize",
+        "icono": "/img/tecnologiaswebp/sequelize.webp"
+    },
+    {
+        "nombre": "Firebase",
+        "icono": "/img/tecnologiaswebp/firebase.webp"
+    },
+    {
+        "nombre": "Insomnia",
+        "icono": "/img/tecnologiaswebp/insomnia.webp"
+    },
+    {
+        "nombre": "Figma",
+        "icono": "/img/tecnologiaswebp/figma.webp"
+    }
+]

@@ -4,6 +4,7 @@ import Proyectos from './components/proyectos/proyectos';
 import Certificados from './components/certificados/certificados';
 import Box from '@mui/material/Box';
 import QuienSoy from './components/quienSoy/quienSoy';
+import Tecnologias from './components/tecnologias/tecnologias';
 
 function App() {
   const [showProyectos, setShowProyectos] = useState(false); // Controla la visibilidad de Proyectos
@@ -113,6 +114,7 @@ function App() {
       </video>
       <div className="quienSoy">
         <QuienSoy />
+        <Tecnologias />
       </div>
       <div
         ref={proyectosRef}

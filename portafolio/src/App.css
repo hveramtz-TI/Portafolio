@@ -35,13 +35,10 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 40px;
+  padding: 10px;
   scroll-snap-align: start;
 }
 
-.quienSoy {
-  margin-top: auto;
-}
 
 .proyectos-container {
   opacity: 0;

@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "titulo": "CCNA: Introduction to Networks",
         "entidad": "Cisco",
         "iconoEntidad": "/img/iconoCisco.svg",
@@ -7,6 +8,7 @@
         "imagen": "/img/CCNAITN__1_.png"
     },
     {
+        "id": "2",
         "titulo": "Azure Space: Diversity in STEM Challenge Completion Badge",
         "entidad": "Microsoft",
         "iconoEntidad": "/img/iconoMicrosoft.png",
@@ -14,14 +16,16 @@
         "imagen": "/img/AzureSpace.png"
     },
     {
-        "titulo": "Curos Excel y Power BI - Analisis y Visualizacion de Datos",
+        "id": "3",
+        "titulo": "Curso Excel y Power BI - Analisis y Visualizacion de Datos",
         "entidad": "Udemy",
         "iconoEntidad": "/img/logoUdemy.png",
         "expedicion": "feb. 2023",
         "imagen": "/img/udemy_logo.png"
     },
     {
-        "titulo": "Habilidades Comunicativas : Mejora Tu Comunicacion",
+        "id": "4",
+        "titulo": "Habilidades Comunicativas: Mejora Tu Comunicacion",
         "entidad": "Udemy",
         "iconoEntidad": "/img/logoUdemy.png",
         "expedicion": "feb. 2023",
