@@ -1,94 +1,117 @@
 [
     {
         "nombre": "Visual Studio Code",
-        "icono": "/img/tecnologiaswebp/visualstudiocode.webp"
+        "icono": "/img/tecnologiaswebp/visualstudiocode.webp",
+        "link": "https://code.visualstudio.com/"
     },
     {
         "nombre": "NetBeans",
-        "icono": "/img/tecnologiaswebp/netbeans.webp"
+        "icono": "/img/tecnologiaswebp/netbeans.webp",
+        "link": "https://netbeans.apache.org/"
     },
     {
         "nombre": "Android Studio",
-        "icono": "/img/tecnologiaswebp/androidstudio.webp"
+        "icono": "/img/tecnologiaswebp/androidstudio.webp",
+        "link": "https://developer.android.com/studio"
     },
     {
         "nombre": "PostgreSQL",
-        "icono": "/img/tecnologiaswebp/postgresql.webp"
+        "icono": "/img/tecnologiaswebp/postgresql.webp",
+        "link": "https://www.postgresql.org/"
     },
     {
         "nombre": "phpMyAdmin",
-        "icono": "/img/tecnologiaswebp/phpmyadmin.webp"
+        "icono": "/img/tecnologiaswebp/phpmyadmin.webp",
+        "link": "https://www.phpmyadmin.net/"
     },
     {
         "nombre": "MySQL",
-        "icono": "/img/tecnologiaswebp/mysql.webp"
+        "icono": "/img/tecnologiaswebp/mysql.webp",
+        "link": "https://www.mysql.com/"
     },
     {
         "nombre": "React.js",
-        "icono": "/img/tecnologiaswebp/reactjs.webp"
+        "icono": "/img/tecnologiaswebp/reactjs.webp",
+        "link": "https://reactjs.org/"
     },
     {
         "nombre": "Kotlin",
-        "icono": "img/tecnologiaswebp/kotlin.webp"
+        "icono": "img/tecnologiaswebp/kotlin.webp",
+        "link": "https://kotlinlang.org/"
     },
     {
         "nombre": "C",
-        "icono": "img/tecnologiaswebp/c.webp"
+        "icono": "img/tecnologiaswebp/c.webp",
+        "link": "https://en.wikipedia.org/wiki/C_(programming_language)"
     },
     {
         "nombre": "C++",
-        "icono": "img/tecnologiaswebp/c++.webp"
+        "icono": "img/tecnologiaswebp/c++.webp",
+        "link": "https://isocpp.org/"
     },
     {
         "nombre": "Java",
-        "icono": "img/tecnologiaswebp/java.webp"
+        "icono": "img/tecnologiaswebp/java.webp",
+        "link": "https://www.java.com/"
     },
     {
         "nombre": "JavaScript",
-        "icono": "/img/tecnologiaswebp/javascript.webp"
+        "icono": "/img/tecnologiaswebp/javascript.webp",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
         "nombre": "Boostrap",
-        "icono": "/img/tecnologiaswebp/boostrap.webp"
+        "icono": "/img/tecnologiaswebp/boostrap.webp",
+        "link": "https://getbootstrap.com/"
     },
     {
         "nombre": "HTML",
-        "icono": "/img/tecnologiaswebp/html.webp"
+        "icono": "/img/tecnologiaswebp/html.webp",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
         "nombre": "CSS",
-        "icono": "/img/tecnologiaswebp/css.webp"
+        "icono": "/img/tecnologiaswebp/css.webp",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
         "nombre": "Github",
-        "icono": "/img/tecnologiaswebp/github.webp"
+        "icono": "/img/tecnologiaswebp/github.webp",
+        "link": "https://github.com/"
     },
     {
         "nombre": "Git",
-        "icono": "/img/tecnologiaswebp/git.webp"
+        "icono": "/img/tecnologiaswebp/git.webp",
+        "link": "https://git-scm.com/"
     },
     {
         "nombre": "Node.js",
-        "icono": "/img/tecnologias/nodejs.svg"
+        "icono": "/img/tecnologias/nodejs.svg",
+        "link": "https://nodejs.org/"
     },
     {
         "nombre": "Express.js",
-        "icono": "/img/tecnologiaswebp/express.webp"
+        "icono": "/img/tecnologiaswebp/express.webp",
+        "link": "https://expressjs.com/"
     },
     {
         "nombre": "sequelize",
-        "icono": "/img/tecnologiaswebp/sequelize.webp"
+        "icono": "/img/tecnologiaswebp/sequelize.webp",
+        "link": "https://sequelize.org/"
     },
     {
         "nombre": "Firebase",
-        "icono": "/img/tecnologiaswebp/firebase.webp"
+        "icono": "/img/tecnologiaswebp/firebase.webp",
+        "link": "https://firebase.google.com/"
     },
     {
         "nombre": "Insomnia",
-        "icono": "/img/tecnologiaswebp/insomnia.webp"
+        "icono": "/img/tecnologiaswebp/insomnia.webp",
+        "link": "https://insomnia.rest/"
     },
     {
         "nombre": "Figma",
-        "icono": "/img/tecnologiaswebp/figma.webp"
+        "icono": "/img/tecnologiaswebp/figma.webp",
+        "link": "https://www.figma.com/"
     }
 ]

@@ -21,7 +21,7 @@ html, body {
   object-fit: cover;
   z-index: -1;
   transition: opacity 1s ease;
-  filter: brightness(20%); /* Aplica un filtro oscuro */
+  filter: brightness(40%); /* Aplica un filtro oscuro */
 }
 
 .video-background.hidden {

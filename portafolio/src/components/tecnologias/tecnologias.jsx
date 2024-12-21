@@ -38,7 +38,13 @@ function Tecnologias() {
     <div className="carousel" ref={carouselRef}>
       {tecnologias.map((tecnologia, index) => (
         <div key={index} className="carousel-item">
-          <img src={tecnologia.icono} alt={tecnologia.nombre} />
+          <a href={tecnologia.link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={tecnologia.icono}
+              alt={tecnologia.nombre}
+              style={{ cursor: 'pointer' }}
+            />
+          </a>
         </div>
       ))}
     </div>

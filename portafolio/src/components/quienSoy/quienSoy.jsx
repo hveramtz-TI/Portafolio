@@ -39,7 +39,7 @@ function QuienSoy() {
                     </CardContent>
                 </Card>
                 <Grow in={true}>
-                    <Card className="card-hover" sx={{ padding: 2 , width:'500px', height:'auto', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
+                    <Card className="card-hover" sx={{ padding: 1 , width:'500px', height:'auto', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
                         <CardContent sx={{paddingBottom:'16px !important'}}>
                             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                                 <p className='parrafo'>Para mí, el desarrollo de software no solo se trata de escribir código; se trata de resolver problemas reales. Mi filosofía se centra en comprender a fondo las necesidades de los usuarios y diseñar soluciones tecnológicas que no solo sean funcionales, sino que también brinden valor y mejoren la vida de las personas.</p>
