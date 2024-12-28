@@ -100,7 +100,13 @@
 @media (max-width: 600px) {
   .card {
     width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
-    height: 100%; /* Ajusta la altura automáticamente */
+    height: 10vh; /* Ajusta la altura automáticamente */
+    transition: transform 10.3s ease-in-out, height 0.3s ease-in-out !important; /* Añade una transición suave */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Elimina el efecto de elevación al hacer hover */
+    height: 20vh;
   }
 
   .card-media {
@@ -112,7 +118,7 @@
   .card-title {
     font-size: 1.2rem; /* Ajusta el tamaño de la fuente del título */
     padding: 5px; /* Ajusta el padding del título */
-    transform: translateY(495%); /* Muestra el título completo por defecto */
+    transform: translateY(185%); /* Muestra el título completo por defecto */
   }
 
   .card-content {
@@ -120,5 +126,6 @@
     padding: 10px; /* Ajusta el padding del contenido */
     overflow-y: auto; /* Añade scroll vertical */
     max-height: 200px; /* Ajusta la altura máxima del contenido */
+    transform: translateY(100%); /* Muestra el contenido completo por defecto */
   }
 }

@@ -1,0 +1,152 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(12, 12, 12, 0.9) 75%, rgba(255, 255, 255, 0.1) 130%);
+    z-index: 1000; /* Asegúrate de que el header esté por encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Añade una sombra para darle un efecto de elevación */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.header .logo {
+    width: fit-content;
+    height: 60px; /* Ajusta el tamaño del logo */
+    padding-left: 4rem;
+    padding-right: 4rem;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Añade una transición suave */
+}
+
+.header .logo:hover {
+    transform: scale(1.5); /* Aumenta el tamaño del logo al hacer hover */
+    filter: brightness(1.2); /* Aumenta el brillo del logo al hacer hover */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding-right: 2rem;
+}
+
+.menu-icon.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.open .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-icon .bar1, .menu-icon .bar2, .menu-icon .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: flex;
+    padding-right: 10rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.menu ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; /* Cambia el color del borde según tu diseño */
+    transition: width 0.3s ease-in-out;
+}
+
+.menu ul li:hover::after {
+    width: 100%;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .header
+    {
+        height: 8vh;
+    }
+
+    .header .logo {
+        padding-left: 1rem;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Fondo del menú en móviles */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        animation: slideDown 0.5s ease-in-out; /* Añade la animación */
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0rem;
+    }
+
+    .menu ul li {
+        padding: 1rem 0;
+        width: 95%;
+    }
+
+    .menu .secciones
+    {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-right: 4rem !important;
+    }
+
+    .logo {
+        height: 50px; /* Ajusta el tamaño del logo para móviles */
+    }
+}
+
+/* Keyframes para la animación */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

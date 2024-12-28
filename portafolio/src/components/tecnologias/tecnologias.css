@@ -51,3 +51,16 @@
     transform: scale(1.1);
     filter: grayscale(0%); /* Elimina el filtro de blanco y negro al pasar el cursor */
 }
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel {
+        width: 80%; /* Ajusta el ancho del carrusel para móviles */
+        height: 8vh; /* Ajusta la altura del carrusel para móviles */
+    }
+
+    .carousel-item img {
+        max-height:8vh; /* Ajusta la altura máxima de las imágenes para móviles */
+        max-width:8vh; /* Ajusta el ancho máximo de las imágenes para móviles */
+    }
+}

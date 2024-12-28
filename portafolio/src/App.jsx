@@ -5,7 +5,7 @@ import Certificados from './components/certificados/certificados';
 import Box from '@mui/material/Box';
 import QuienSoy from './components/quienSoy/quienSoy';
 import Tecnologias from './components/tecnologias/tecnologias';
-import Header from './components/header/header'; // Importa el componente Header
+import HeaderHamburguesa from './components/header/headerHamburguesa'; // Importa el componente HeaderHamburguesa
 
 function App() {
   const [showProyectos, setShowProyectos] = useState(false); // Controla la visibilidad de Proyectos
@@ -79,8 +79,8 @@ function App() {
   }, [showProyectos, showCertificados]);
 
   return (
-    <Box className="App">
-      <Header /> {/* Incluye el componente Header */}
+    <Box className="App" id="home"> {/* Añade el identificador para la sección de inicio */}
+      <HeaderHamburguesa /> {/* Incluye el componente HeaderHamburguesa */}
       <video
         ref={videoRef1}
         className="video-background"
@@ -114,7 +114,7 @@ function App() {
       >
         <source src="/video/battlefieldNaval.mp4" type="video/mp4" />
       </video>
-      <div id="quiensoy" className="quienSoy">
+      <div className="quienSoy" id='quiensoy'>
         <QuienSoy />
         <Tecnologias />
       </div>

@@ -95,7 +95,7 @@
   }
 
   .card-hover {
-    width: 100% !important; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+    width: 80% !important; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
     padding: 0rem !important; /* Ajusta el padding */
   }
 
