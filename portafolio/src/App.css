@@ -29,7 +29,9 @@ html, body {
 }
 
 .quienSoy,
-.proyectos-container,.certificados-container {
+.proyectos-container,
+.certificados-container,
+.experiencia-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,19 +41,17 @@ html, body {
   scroll-snap-align: start;
 }
 
-
-.proyectos-container {
+.proyectos-container,
+.certificados-container,
+.experiencia-container {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.proyectos-container.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.certificados-container.visible {
+.proyectos-container.visible,
+.certificados-container.visible,
+.experiencia-container.visible {
   opacity: 1;
   transform: translateY(0);
 }

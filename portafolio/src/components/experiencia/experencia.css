@@ -1,0 +1,75 @@
+/* Estilos generales para la sección de experiencia */
+.experiencia-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  scroll-snap-align: start;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.experiencia-paper {
+    background-color: rgba(171, 168, 168, 0.9) !important;
+}
+
+.experiencia-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.MuiStepIcon-root
+{
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+.MuiButton-root
+{
+    background-color: rgba(203, 123, 18, 0.781) !important;
+}
+
+.experiencia-paper {
+  padding: 20px;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.experiencia-stepper {
+  width: 100%;
+}
+
+.experiencia-button {
+    margin-top: 10px;
+    background-color: rgba(203, 123, 18, 0.781) !important;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: black !important;
+  }
+  
+  .experiencia-button:hover {
+    box-shadow: 0 0 10px rgba(203, 123, 18, 0.781), 0 0 20px rgba(203, 123, 18, 0.781), 0 0 30px rgba(203, 123, 18, 0.781);
+    transform: scale(1.05);
+  }
+
+  .MuiButtonBase-root
+  {
+    color: black !important;
+  }
+  
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .experiencia-paper {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .experiencia-button {
+    width: 100%;
+    text-align: center;
+  }
+}
