@@ -7,6 +7,7 @@ import QuienSoy from './components/quienSoy/quienSoy';
 import Tecnologias from './components/tecnologias/tecnologias';
 import HeaderHamburguesa from './components/header/headerHamburguesa'; // Importa el componente HeaderHamburguesa
 import Experencia from './components/experiencia/experencia'; // Importa el componente Experencia
+import Footer from './components/footer/footer';
 
 function App() {
   const [showProyectos, setShowProyectos] = useState(false); // Controla la visibilidad de Proyectos
@@ -183,7 +184,7 @@ function App() {
         ref={certificadosRef}
         className={`certificados-container ${showCertificados ? 'visible' : ''}`}
       >
-        {showCertificados && <Certificados />}
+        {showCertificados && <Certificados /> }
       </div>
     </Box>
   );

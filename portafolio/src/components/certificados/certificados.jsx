@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import { Box, Chip, Avatar } from '@mui/material';
 import './certificados.css';
+import Footer from '../footer/footer';
 
 function Certificados() {
 
@@ -32,6 +33,7 @@ function Certificados() {
             </CardContent>
           </Card>
         ))}
+        <Footer></Footer>
       </Box>
     </div>
   );
