@@ -99,18 +99,21 @@
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 600px) {
   .card {
-    width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
-    height: 10vh; /* Ajusta la altura automáticamente */
-    transition: transform 10.3s ease-in-out, height 0.3s ease-in-out !important; /* Añade una transición suave */
+      width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+      height: 10vh; /* Ajusta la altura automáticamente */
+      transition: transform 0.3s ease-in-out, height 0.3s ease-in-out !important; /* Añade una transición suave */
   }
-
+  
   .card:hover {
-    transform: scale(1.05); /* Elimina el efecto de elevación al hacer hover */
-    height: 20vh;
+      transform: scale(1.05); /* Elimina el efecto de elevación al hacer hover */
+      height: 30vh;
   }
-
+  
+  .card.reduced {
+      height: 2vh !important; /* Ajusta la altura de las tarjetas reducidas */
+  }
   .card-media {
-    height: 20vh; /* Ajusta la altura de la imagen automáticamente */
+    height: auto; /* Ajusta la altura de la imagen automáticamente */
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
   }

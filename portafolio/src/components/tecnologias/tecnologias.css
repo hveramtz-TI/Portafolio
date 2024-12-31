@@ -57,6 +57,7 @@
     .carousel {
         width: 80%; /* Ajusta el ancho del carrusel para móviles */
         height: 8vh; /* Ajusta la altura del carrusel para móviles */
+        margin: 1vh;
     }
 
     .carousel-item img {

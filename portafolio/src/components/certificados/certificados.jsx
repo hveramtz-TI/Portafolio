@@ -15,9 +15,9 @@ function Certificados() {
       <Typography variant="h4" component="h2" gutterBottom align="center">
         Certificados
       </Typography>
-      <Box sx={{ display: 'flex', flexWrap:'wrap', gap: 2, justifyContent: 'center' , height: '100%' }}>
+      <Box sx={{ display: 'flex', flexWrap:'wrap', gap: 1, justifyContent: 'center' , height: '100%' }}>
         {certificados.map((certificado) => (
-          <Card key={certificado.id} sx={{ maxWidth: 300, margin: 2 }}>
+          <Card key={certificado.id} sx={{ minWidth:'20vh !important' ,maxWidth: '40vh !important', margin: 2 }}>
             <CardMedia
               component="img"
               height="140"              

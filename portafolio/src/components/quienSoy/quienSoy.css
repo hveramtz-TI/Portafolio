@@ -92,26 +92,54 @@
     padding: 1vh !important; /* Ajusta el padding del encabezado de la tarjeta */
   }
 
-  .card-hover {
+  .quien-soy .MuiCardHeader-root .MuiTypography-root
+  {
+    font-size: 2vh !important; /* Ajusta el tamaño de la fuente del encabezado */
+  }
+
+  .quien-soy .MuiPaper-root .MuiCardContent-root
+  {
+    padding: 0vh !important; /* Ajusta el padding del contenido de la tarjeta */
+  }
+
+  .quien-soy .MuiCardContent-root .MuiChip-root
+  {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-icon
+  {
+    margin: 0%;
+    padding: 1vh;
+  }
+
+  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-label
+  {
+    display: none !important;
+  }
+
+  .quien-soy .card-hover {
     width: 80% !important; /* Ajusta el ancho de la tarjeta al 80% del contenedor */
     height: 30vh !important; /* Ajusta la altura de la tarjeta al 20% del contenedor */
     padding: 0rem !important; /* Ajusta el padding */
   }
 
-  .card-hover .MuiCardContent-root {
+  .quien-soy .card-hover .MuiCardContent-root {
     padding: 2vh !important; /* Ajusta el padding del contenido */
   }
 
-  .parrafo {
+  .quien-soy .parrafo {
     font-size: auto !important; /* Ajusta el tamaño de la fuente */
     line-height: 1 !important; /* Ajusta la altura de línea */
     padding: 0%;
     text-align: center;
     overflow-y: auto;
     height: 26vh;
+    font-size: 2.3vh;
   }
 
-  .MuiCardHeader-root {
+  .quien-soy .MuiCardHeader-root {
     text-align: center !important; /* Centra el texto del encabezado */
   }
 }

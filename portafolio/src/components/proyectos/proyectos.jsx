@@ -15,7 +15,7 @@ import proyectos from '../../assets/json/proyectos.json';
 
 function Proyectos() {
   return (
-    <div>
+    <div className='proyectos'>
         <Box sx={{ flexGrow: 1, padding:{xs:4,sm:3,md:4} }}>
             <Fade in={true} timeout={1500}>
                 <Typography variant="h4" component="h2" gutterBottom align="center" sx={{paddingBottom:2, color: 'white'}}>

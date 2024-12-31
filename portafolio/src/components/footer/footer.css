@@ -36,6 +36,7 @@
 @media (max-width: 600px) {
   .footer {
     padding: 10px 0;
+    max-height: fit-content;
   }
 
   .footer-content {
@@ -44,6 +45,11 @@
 
   .footer-links span {
     display: block;
-    margin: 5px 0;
+    margin: 5px ;
+  }
+  .footer-links
+  {
+    display: flex;
+    justify-content: space-between;
   }
 }

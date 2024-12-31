@@ -46,6 +46,7 @@
     max-width: 40% !important;
     margin: 8px auto;
     height: fit-content;
+    max-height: 20vh !important;
   }
   .certificados
   {
@@ -66,15 +67,15 @@
   }
   .certificados .MuiCardContent-root .MuiTypography-root
   {
-    font-size: 1.5vh;
+    font-size: 1vh;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 600px) {
   .certificados .MuiCard-root {
-    max-width:45% !important;
-    max-height: min-content;
+    max-width:30vh !important;
+    max-height: 20vh !important;
     border: 5px solid #f0f0f0;
     border-radius: 20px;
     margin: 0%;
@@ -83,12 +84,23 @@
 
   .certificados .MuiCardContent-root .MuiTypography-root
   {
-    font-size: 0.9rem;
+    font-size: 1.8vh;
+  }
+
+  .certificados .MuiCardContent-root .MuiAvatar-root
+  {
+    width: 3vh !important;
+    height: 3vh !important;
+  }
+
+  .certificados .MuiCardContent-root
+  {
+    padding: 0px !important;
   }
 
   .certificados .MuiCardMedia-root
   {
-    height: 100px;
+    height: 50px !important;
 
   }
 
@@ -100,5 +112,48 @@
   .MuiAvatar-root {
     width: 20px !important;
     height: 20px !important;
+  }
+
+@media screen and (max-width: 400px) {
+  .certificados .MuiCard-root {
+    max-width: 20vh !important;
+    max-height: 20vh !important;
+    border: 5px solid #f0f0f0;
+    border-radius: 20px;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .certificados .MuiCardContent-root .MuiTypography-root
+  {
+    font-size: 1.5vh;
+  }
+
+  .certificados .MuiCardContent-root .MuiAvatar-root
+  {
+    width: 2.5vh !important;
+    height: 2.5vh !important;
+  }
+
+  .certificados .MuiCardContent-root
+  {
+    padding: 0px !important;
+  }
+
+  .certificados .MuiCardMedia-root
+  {
+    height: 5vh!important;
+  }
+
+  .certificados .MuiBox-root
+  {
+    gap:10px;
+  }
+
+  .MuiAvatar-root {
+    width: 20px !important;
+    height: 20px !important;
+  
+  }
   }
 }
