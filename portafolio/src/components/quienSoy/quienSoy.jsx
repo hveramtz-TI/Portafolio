@@ -8,7 +8,7 @@ import './quienSoy.css' // Importa el archivo CSS
 function QuienSoy() {
     return (
         <div className='quien-soy'>
-            <Container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 2, gap: 2 }}>
+            <Container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 2, gap: 1 }}>
                 <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '40vh', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
                     <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: 100, height: 100 }} />
                     <CardHeader title="Hector Vera Martinez" subheader="Ingeniero de Ejecucion en Informatica" />

@@ -120,7 +120,7 @@
   }
 
   .quien-soy .card-hover {
-    width: 80% !important; /* Ajusta el ancho de la tarjeta al 80% del contenedor */
+    width: 30vh !important; /* Ajusta el ancho de la tarjeta al 80% del contenedor */
     height: 30vh !important; /* Ajusta la altura de la tarjeta al 20% del contenedor */
     padding: 0rem !important; /* Ajusta el padding */
   }
@@ -141,5 +141,15 @@
 
   .quien-soy .MuiCardHeader-root {
     text-align: center !important; /* Centra el texto del encabezado */
+  }
+
+  .quien-soy .MuiContainer-root
+  {
+    padding: 0vh !important;
+  }
+
+  .quien-soy .MuiCardHeader-root
+  {
+    padding: 0vh !important;
   }
 }

@@ -22,6 +22,7 @@ html, body {
   z-index: -1;
   transition: opacity 1s ease;
   filter: brightness(40%); /* Aplica un filtro oscuro */
+  pointer-events: none; /* Hace que el video no sea clickeable */
 }
 
 .video-background.hidden {
