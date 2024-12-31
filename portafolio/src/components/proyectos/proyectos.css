@@ -113,7 +113,7 @@
       height: 2vh !important; /* Ajusta la altura de las tarjetas reducidas */
   }
   .card-media {
-    height: auto; /* Ajusta la altura de la imagen automáticamente */
+    height: 30vh; /* Ajusta la altura de la imagen automáticamente */
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
   }
@@ -121,14 +121,70 @@
   .card-title {
     font-size: 1.2rem; /* Ajusta el tamaño de la fuente del título */
     padding: 5px; /* Ajusta el padding del título */
-    transform: translateY(130%); /* Muestra el título completo por defecto */
+    transform: translateY(100%); /* Muestra el título completo por defecto */
   }
 
-  .card-content {
+  .proyectos .MuiCard-root .MuiTypography-root
+  {
+    margin: 0% !important;
+    padding: 1vh !important;
+  }
+
+  .MuiCard-content {
     top: 40px; /* Ajusta la posición del contenido */
     padding: 10px; /* Ajusta el padding del contenido */
     overflow-y: auto; /* Añade scroll vertical */
     max-height: 200px; /* Ajusta la altura máxima del contenido */
     transform: translateY(100%); /* Muestra el contenido completo por defecto */
+    height: 30vh !important;
+    margin: 0% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+    height: 8vh; /* Ajusta la altura automáticamente */
+    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out !important; /* Añade una transición suave */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Elimina el efecto de elevación al hacer hover */
+    height: 25vh;
+  }
+
+  .card.reduced {
+    height: 2vh !important; /* Ajusta la altura de las tarjetas reducidas */
+  }
+
+  .card-media {
+    height: 25vh; /* Ajusta la altura de la imagen automáticamente */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+  }
+
+  .card-title {
+    font-size: 1vh; /* Ajusta el tamaño de la fuente del título */
+    padding: 5px; /* Ajusta el padding del título */
+    transform: translateY(30%); /* Muestra el título completo por defecto */
+  }
+
+  .proyectos .MuiCard-root .MuiTypography-root {
+    margin: 0% !important;
+    padding: 1.2vh !important;
+  }
+
+  .MuiCard-content {
+    top: 40px; /* Ajusta la posición del contenido */
+    padding: 10px; /* Ajusta el padding del contenido */
+    overflow-y: auto; /* Añade scroll vertical */
+    max-height: 150px; /* Ajusta la altura máxima del contenido */
+    transform: translateY(100%); /* Muestra el contenido completo por defecto */
+    height: 25vh !important;
+    margin: 0% !important;
+  }
+
+  .proyectos .MuiCard-root .MuiCardContent-root .MuiTypography-root {
+    font-size: 1.8vh !important;
   }
 }

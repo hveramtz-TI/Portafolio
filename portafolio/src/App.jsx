@@ -7,7 +7,6 @@ import QuienSoy from './components/quienSoy/quienSoy';
 import Tecnologias from './components/tecnologias/tecnologias';
 import HeaderHamburguesa from './components/header/headerHamburguesa'; // Importa el componente HeaderHamburguesa
 import Experencia from './components/experiencia/experencia'; // Importa el componente Experencia
-import Footer from './components/footer/footer';
 
 function App() {
   const [showProyectos, setShowProyectos] = useState(false); // Controla la visibilidad de Proyectos
@@ -117,50 +116,52 @@ function App() {
   return (
     <Box className="App" id="home"> {/* Añade el identificador para la sección de inicio */}
       <HeaderHamburguesa /> {/* Incluye el componente HeaderHamburguesa */}
-      <video
-        ref={videoRef1}
-        className="video-background"
-        autoPlay
-        loop
-        muted
-        preload="auto" // Preload para mejorar tiempos de carga
-        poster="/path/to/poster1.jpg" // Imagen de poster mientras se carga el video
-      >
-        <source src="/video/battlefieldShangai.mp4" type="video/mp4" />
-      </video>
-      <video
-        ref={videoRef2}
-        className="video-background hidden"
-        autoPlay
-        loop
-        muted
-        preload="auto" // Preload para mejorar tiempos de carga
-        poster="/path/to/poster2.jpg" // Imagen de poster mientras se carga el video
-      >
-        <source src="/video/battlefieldAeropuerto.mp4" type="video/mp4" />
-      </video>
-      <video
-        ref={videoRef3}
-        className="video-background hidden"
-        autoPlay
-        loop
-        muted
-        preload="auto" // Preload para mejorar tiempos de carga
-        poster="/path/to/poster3.jpg" // Imagen de poster mientras se carga el video
-      >
-        <source src="/video/battlefieldNaval.mp4" type="video/mp4" />
-      </video>
-      <video
-        ref={videoRef4}
-        className="video-background hidden"
-        autoPlay
-        loop
-        muted
-        preload="auto" // Preload para mejorar tiempos de carga
-        poster="/path/to/poster4.jpg" // Imagen de poster mientras se carga el video
-      >
-        <source src="/video/Battlefieldedificio.mp4" type="video/mp4" />
-      </video>
+      <div className="video-container">
+        <video
+          ref={videoRef1}
+          className="video-background"
+          autoPlay
+          loop
+          muted
+          preload="auto" // Preload para mejorar tiempos de carga
+          poster="/path/to/poster1.jpg" // Imagen de poster mientras se carga el video
+        >
+          <source src="/video/battlefieldShangai.mp4" type="video/mp4" />
+        </video>
+        <video
+          ref={videoRef2}
+          className="video-background hidden"
+          autoPlay
+          loop
+          muted
+          preload="auto" // Preload para mejorar tiempos de carga
+          poster="/path/to/poster2.jpg" // Imagen de poster mientras se carga el video
+        >
+          <source src="/video/battlefieldAeropuerto.mp4" type="video/mp4" />
+        </video>
+        <video
+          ref={videoRef3}
+          className="video-background hidden"
+          autoPlay
+          loop
+          muted
+          preload="auto" // Preload para mejorar tiempos de carga
+          poster="/path/to/poster3.jpg" // Imagen de poster mientras se carga el video
+        >
+          <source src="/video/battlefieldNaval.mp4" type="video/mp4" />
+        </video>
+        <video
+          ref={videoRef4}
+          className="video-background hidden"
+          autoPlay
+          loop
+          muted
+          preload="auto" // Preload para mejorar tiempos de carga
+          poster="/path/to/poster4.jpg" // Imagen de poster mientras se carga el video
+        >
+          <source src="/video/Battlefieldedificio.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="quienSoy" id='quiensoy'>
         <QuienSoy />
         <Tecnologias />
