@@ -13,8 +13,8 @@
 }
 
 .header .logo {
-    width: fit-content;
-    height: 60px; /* Ajusta el tamaño del logo */
+    width: 20vh;
+    height: 12vh; /* Ajusta el tamaño del logo */
     padding-left: 4rem;
     padding-right: 4rem;
     cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
@@ -96,6 +96,8 @@
 
     .header .logo {
         padding-left: 1rem;
+        height: 8vh; /* Ajusta el tamaño del logo para móviles */
+        width: 12vh;
     }
     
     .menu {
