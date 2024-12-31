@@ -1,20 +1,8 @@
-/* Estilos generales para la sección de experiencia */
-.experiencia-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 10px;
-  scroll-snap-align: start;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
 .experiencia-paper {
     background-color: rgba(171, 168, 168, 0.9) !important;
-    margin-top: 4rem !important; 
+    margin-top: 4vh !important; 
+    height: 70vh  !important;
+
 }
 
 .experiencia-container.visible {
@@ -66,7 +54,8 @@
 @media (max-width: 600px) {
   .experiencia-paper {
     width: 80%;
-    height: fit-content;
+    max-height: 60vh;
+    overflow-y: auto;
   }
 
   .experiencia-button {

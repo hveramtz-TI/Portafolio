@@ -36,8 +36,8 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 10px;
+  height: 100vh !important;
+  padding: 10px !important;
   scroll-snap-align: start;
 }
 

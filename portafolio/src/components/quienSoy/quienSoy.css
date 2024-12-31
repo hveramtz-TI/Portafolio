@@ -83,30 +83,32 @@
     flex-direction: column;
   }
 
-  .quien-soy .MuiAvatar-root
-  {
-    width: 100px !important; /* Ajusta el ancho de la imagen del avatar */
-    height: 100px !important; /* Ajusta la altura de la imagen del avatar */
+  .quien-soy .MuiAvatar-root {
+    width: 10vh !important; /* Ajusta el ancho de la imagen del avatar */
+    height: 10vh !important; /* Ajusta la altura de la imagen del avatar */
   }
 
-  .quien-soy .MuiCardHeader-root
-  {
-    padding: 0.5rem !important; /* Ajusta el padding del encabezado de la tarjeta */
+  .quien-soy .MuiCardHeader-root {
+    padding: 1vh !important; /* Ajusta el padding del encabezado de la tarjeta */
   }
 
   .card-hover {
-    width: 80% !important; /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+    width: 80% !important; /* Ajusta el ancho de la tarjeta al 80% del contenedor */
+    height: 30vh !important; /* Ajusta la altura de la tarjeta al 20% del contenedor */
     padding: 0rem !important; /* Ajusta el padding */
   }
 
   .card-hover .MuiCardContent-root {
-    padding: 1rem !important; /* Ajusta el padding del contenido */
+    padding: 2vh !important; /* Ajusta el padding del contenido */
   }
 
   .parrafo {
-    font-size: 1rem !important; /* Ajusta el tamaño de la fuente */
-    line-height: 1.4 !important; /* Ajusta la altura de línea */
+    font-size: auto !important; /* Ajusta el tamaño de la fuente */
+    line-height: 1 !important; /* Ajusta la altura de línea */
     padding: 0%;
+    text-align: center;
+    overflow-y: auto;
+    height: 26vh;
   }
 
   .MuiCardHeader-root {

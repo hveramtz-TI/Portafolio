@@ -118,7 +118,7 @@
   .card-title {
     font-size: 1.2rem; /* Ajusta el tamaño de la fuente del título */
     padding: 5px; /* Ajusta el padding del título */
-    transform: translateY(185%); /* Muestra el título completo por defecto */
+    transform: translateY(130%); /* Muestra el título completo por defecto */
   }
 
   .card-content {
