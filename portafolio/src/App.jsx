@@ -123,6 +123,7 @@ function App() {
           autoPlay
           loop
           muted
+          playsInline
           preload="auto" // Preload para mejorar tiempos de carga
           poster="/path/to/poster1.jpg" // Imagen de poster mientras se carga el video
         >
@@ -134,6 +135,7 @@ function App() {
           autoPlay
           loop
           muted
+          playsInline
           preload="auto" // Preload para mejorar tiempos de carga
           poster="/path/to/poster2.jpg" // Imagen de poster mientras se carga el video
         >
@@ -145,6 +147,7 @@ function App() {
           autoPlay
           loop
           muted
+          playsInline
           preload="auto" // Preload para mejorar tiempos de carga
           poster="/path/to/poster3.jpg" // Imagen de poster mientras se carga el video
         >
@@ -156,6 +159,7 @@ function App() {
           autoPlay
           loop
           muted
+          playsInline
           preload="auto" // Preload para mejorar tiempos de carga
           poster="/path/to/poster4.jpg" // Imagen de poster mientras se carga el video
         >
