@@ -5,11 +5,6 @@
         "link": "https://code.visualstudio.com/"
     },
     {
-        "nombre": "NetBeans",
-        "icono": "/img/tecnologiaswebp/netbeans.webp",
-        "link": "https://netbeans.apache.org/"
-    },
-    {
         "nombre": "Android Studio",
         "icono": "/img/tecnologiaswebp/androidstudio.webp",
         "link": "https://developer.android.com/studio"
@@ -86,7 +81,7 @@
     },
     {
         "nombre": "Node.js",
-        "icono": "/img/tecnologias/nodejs.svg",
+        "icono": "/img/tecnologiaswebp/nodejs.svg",
         "link": "https://nodejs.org/"
     },
     {
@@ -105,13 +100,28 @@
         "link": "https://firebase.google.com/"
     },
     {
-        "nombre": "Insomnia",
-        "icono": "/img/tecnologiaswebp/insomnia.webp",
-        "link": "https://insomnia.rest/"
-    },
-    {
         "nombre": "Figma",
         "icono": "/img/tecnologiaswebp/figma.webp",
         "link": "https://www.figma.com/"
+    },
+    {
+        "nombre": "Fly.io",
+        "icono": "/img/tecnologiaswebp/fly.io.webp",
+        "link": "https://fly.io/"
+    },
+    {
+        "nombre":"Neon.tech",
+        "icono": "/img/tecnologiaswebp/neonserver.webp",
+        "link": "https://neon.tech/"
+    },
+    {
+        "nombre":"RapiApi",
+        "icono": "/img/tecnologiaswebp/rapiapi.webp",
+        "link": "https://rapidapi.com/"
+    },
+    {
+        "nombre": "Axios",
+        "icono": "/img/tecnologiaswebp/axios.webp",
+        "link": "https://axios-http.com/"
     }
 ]

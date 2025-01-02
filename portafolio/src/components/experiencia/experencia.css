@@ -1,7 +1,9 @@
 .experiencia-paper {
-    background-color: rgba(171, 168, 168, 0.9) !important;
+    background-color: rgba(171, 168, 168, 0.6) !important;
     margin-top: 4vh !important; 
-    height: 70vh  !important;
+    height: 65vh  !important;
+    border: 3px solid #f2f2f2ad !important;
+    border-radius: 10px !important;
 }
 
 .experiencia-container.visible {

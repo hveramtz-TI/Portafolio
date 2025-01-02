@@ -9,7 +9,7 @@ import Chip from '@mui/material/Chip';
 import Avatar from '@mui/material/Avatar';
 import Grow from '@mui/material/Grow';
 import Fade from '@mui/material/Fade';
-import './Proyectos.css'; // Importa el archivo CSS
+import './proyectos.css'; // Importa el archivo CSS
 
 import proyectos from '../../assets/json/proyectos.json';
 
@@ -57,16 +57,25 @@ function Proyectos() {
                                                     objectFit: 'contain' // Asegura que la imagen se ajuste sin recortarse
                                                 }
                                             }}
-                                            sx={{ width: '24px !important', height: '24px !important'}} // Ajusta el tamaño del avatar
+                                            sx={{
+                                                width: '24px !important', 
+                                                height: '24px !important',
+                                                transition: 'border-color 0.3s ease, transform 0.3s ease',
+                                            }} // Ajusta el tamaño del avatar
                                         />
                                     }
-                                    className={
-                                        tecnologia.nombre === 'React' ? 'chip-react' : 
-                                        tecnologia.nombre === 'Angular' ? 'chip-angular' : 
-                                        ''
-                                    } 
+                                    className="chip" // Aplica la clase base
                                     sx={{
-                                        border: '1px solid #f2f2f2', color:'white',  // Añade un borde de 1px de color negro
+                                        color: 'white',
+                                        border: `1px solid ${tecnologia.color}`, // Usa el color del JSON
+                                        '&:hover': {
+                                            backgroundColor: tecnologia.colorHover, // Usa el colorHover del JSON
+                                            boxShadow: `0 0 10px ${tecnologia.color}, 0 0 20px ${tecnologia.color}, 0 0 30px ${tecnologia.color}`, // Efecto de iluminación
+                                            '& .MuiAvatar-root': {
+                                                border: `2px solid ${tecnologia.color}`, // Usa el colorHover del JSON para el borde en hover
+                                                transform: 'scale(1.1)', // Efecto de zoom en hover
+                                            }
+                                        },
                                     }}
                                 />
                             ))}

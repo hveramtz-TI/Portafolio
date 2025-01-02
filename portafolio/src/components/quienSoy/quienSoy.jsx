@@ -9,8 +9,8 @@ function QuienSoy() {
     return (
         <div className='quien-soy'>
             <Container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 2, gap: 1 }}>
-                <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '40vh', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
-                    <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: 100, height: 100 }} />
+                <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '50vh', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
+                    <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: '25vh', height: '25vh' }} />
                     <CardHeader title="Hector Vera Martinez" subheader="Ingeniero de Ejecucion en Informatica" />
                     <CardContent sx={{ padding: '0px !important' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1, mt: 0 }}>
@@ -39,9 +39,9 @@ function QuienSoy() {
                     </CardContent>
                 </Card>
                 <Grow in={true}>
-                    <Card className="card-hover" sx={{ padding: 1 , width:'70vh', height:'auto', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
+                    <Card className="card-hover" sx={{ padding: 1 , width:'60vh', height:'auto', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
                         <CardContent sx={{paddingBottom:'16px !important'}}>
-                            <p className='parrafo'>Para mí, el desarrollo de software no solo se trata de escribir código; se trata de resolver problemas reales. Mi filosofía se centra en comprender a fondo las necesidades de los usuarios y diseñar soluciones tecnológicas que no solo sean funcionales, sino que también brinden valor y mejoren la vida de las personas. Me apasiona el desarrollo web y móvil, y disfruto trabajando con tecnologías modernas y herramientas de vanguardia. Me considero un aprendiz constante y siempre estoy buscando mejorar mis habilidades y conocimientos.</p>
+                            <p className='parrafo'>Me apasiona resolver problemas reales a través del desarrollo de software, enfocándome en comprender las necesidades de los usuarios y diseñar soluciones tecnológicas que brinden valor y mejoren la vida de las personas. Disfruto del desarrollo web y móvil, y siempre busco mejorar mis habilidades y conocimientos.</p>
                         </CardContent>
                     </Card>
                 </Grow>

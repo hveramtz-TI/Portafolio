@@ -6,15 +6,21 @@
     "tecnologias": [
       {
         "nombre": "React",
-        "icono": "/img/React-icon.png"
+        "icono": "/img/tecnologiaswebp/reactjs.webp",
+        "color": "rgb(97, 218, 2510, 0.5)",
+        "colorHover": "rgba(97, 218, 251, 0.2)"
       },
       {
         "nombre": "Node.js",
-        "icono": "/src/assets/icons/nodejs-icon.png"
+        "icono": "/img/tecnologiaswebp/nodejs.svg",
+        "color": "rgb(51, 153, 51, 0.5)",
+        "colorHover": "rgba(51, 153, 51, 0.2)"
       },
       {
-        "nombre": "MongoDB",
-        "icono": "/src/assets/icons/mongodb-icon.png"
+        "nombre": "fly.io",
+        "icono": "/img/tecnologiaswebp/fly.io.webp",
+        "color": "rgb(138, 43, 226, 0.5)",
+        "colorHover": "rgba(138, 43, 226, 0.2)"
       }
     ],
     "url": "https://www.proyectoA.com",
@@ -27,15 +33,21 @@
     "tecnologias": [
       {
         "nombre": "Angular",
-        "icono": "/src/assets/icons/angular-icon.png"
+        "icono": "/src/assets/icons/angular-icon.png",
+        "color": "rgb(221, 0, 49)",
+        "colorHover": "rgba(221, 0, 49, 0.5)"
       },
       {
         "nombre": "Express",
-        "icono": "/src/assets/icons/express-icon.png"
+        "icono": "/src/assets/icons/express-icon.png",
+        "color": "rgb(0, 0, 0)",
+        "colorHover": "rgba(0, 0, 0, 0.5)"
       },
       {
         "nombre": "MySQL",
-        "icono": "/src/assets/icons/mysql-icon.png"
+        "icono": "/src/assets/icons/mysql-icon.png",
+        "color": "rgb(68, 121, 161)",
+        "colorHover": "rgba(68, 121, 161, 0.5)"
       }
     ],
     "url": "https://www.proyectoB.com",
@@ -48,15 +60,21 @@
     "tecnologias": [
       {
         "nombre": "Vue",
-        "icono": "/src/assets/icons/vue-icon.png"
+        "icono": "/src/assets/icons/vue-icon.png",
+        "color": "rgb(79, 192, 141)",
+        "colorHover": "rgba(79, 192, 141, 0.5)"
       },
       {
         "nombre": "Django",
-        "icono": "/src/assets/icons/django-icon.png"
+        "icono": "/src/assets/icons/django-icon.png",
+        "color": "rgb(9, 46, 32)",
+        "colorHover": "rgba(9, 46, 32, 0.5)"
       },
       {
         "nombre": "PostgreSQL",
-        "icono": "/src/assets/icons/postgresql-icon.png"
+        "icono": "/src/assets/icons/postgresql-icon.png",
+        "color": "rgb(51, 103, 145)",
+        "colorHover": "rgba(51, 103, 145, 0.5)"
       }
     ],
     "url": "https://www.proyectoC.com",
@@ -69,15 +87,21 @@
     "tecnologias": [
       {
         "nombre": "Svelte",
-        "icono": "/src/assets/icons/svelte-icon.png"
+        "icono": "/src/assets/icons/svelte-icon.png",
+        "color": "rgb(255, 62, 0)",
+        "colorHover": "rgba(255, 62, 0, 0.5)"
       },
       {
         "nombre": "Flask",
-        "icono": "/src/assets/icons/flask-icon.png"
+        "icono": "/src/assets/icons/flask-icon.png",
+        "color": "rgb(0, 0, 0)",
+        "colorHover": "rgba(0, 0, 0, 0.5)"
       },
       {
         "nombre": "SQLite",
-        "icono": "/src/assets/icons/sqlite-icon.png"
+        "icono": "/src/assets/icons/sqlite-icon.png",
+        "color": "rgb(0, 59, 87)",
+        "colorHover": "rgba(0, 59, 87, 0.5)"
       }
     ],
     "url": "https://www.proyectoD.com",
