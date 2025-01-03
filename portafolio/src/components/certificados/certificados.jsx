@@ -16,7 +16,7 @@ function Certificados() {
           Certificados
         </Typography>
       </Grow>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0, justifyContent: 'center', height: '80%' }}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center', height: '80%' }}>
         {certificados.map((certificado) => (
           <Grow in={true} timeout={1000} key={certificado.id}>
             <Card sx={{ minWidth: '20vh !important', maxWidth: '40vh !important', margin: 2 }}>
