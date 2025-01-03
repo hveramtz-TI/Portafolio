@@ -125,7 +125,7 @@ function App() {
           muted
           playsInline
           preload="auto" // Preload para mejorar tiempos de carga
-          poster="/path/to/poster1.jpg" // Imagen de poster mientras se carga el video
+          poster="/img/posterVideo/shangai.webp" // Imagen de poster mientras se carga el video
         >
           <source src="/video/battlefieldShangai.mp4" type="video/mp4" />
         </video>
@@ -137,7 +137,7 @@ function App() {
           muted
           playsInline
           preload="auto" // Preload para mejorar tiempos de carga
-          poster="/path/to/poster2.jpg" // Imagen de poster mientras se carga el video
+          poster="/img/posterVideo/aeropuerto.webp" // Imagen de poster mientras se carga el video
         >
           <source src="/video/battlefieldAeropuerto.mp4" type="video/mp4" />
         </video>
@@ -149,7 +149,7 @@ function App() {
           muted
           playsInline
           preload="auto" // Preload para mejorar tiempos de carga
-          poster="/path/to/poster3.jpg" // Imagen de poster mientras se carga el video
+          poster="/img/posterVideo/portaviones.webp" // Imagen de poster mientras se carga el video
         >
           <source src="/video/battlefieldNaval.mp4" type="video/mp4" />
         </video>
@@ -161,7 +161,7 @@ function App() {
           muted
           playsInline
           preload="auto" // Preload para mejorar tiempos de carga
-          poster="/path/to/poster4.jpg" // Imagen de poster mientras se carga el video
+          poster="/img/posterVideo/edificios.webp" // Imagen de poster mientras se carga el video
         >
           <source src="/video/Battlefieldedificio.mp4" type="video/mp4" />
         </video>
