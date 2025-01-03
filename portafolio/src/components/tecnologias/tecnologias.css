@@ -1,6 +1,6 @@
 .carousel {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     width: 65%;
@@ -17,6 +17,12 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
 }
 
 .carousel-item {
@@ -29,8 +35,7 @@
     margin-right: 0;
 }
 
-.carousel-item a
-{
+.carousel-item a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +66,7 @@
     }
 
     .carousel-item img {
-        max-height:8vh; /* Ajusta la altura máxima de las imágenes para móviles */
-        max-width:8vh; /* Ajusta el ancho máximo de las imágenes para móviles */
+        max-height: 8vh; /* Ajusta la altura máxima de las imágenes para móviles */
+        max-width: 8vh; /* Ajusta el ancho máximo de las imágenes para móviles */
     }
 }

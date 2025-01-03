@@ -27,54 +27,9 @@
   height:200px;
 }
 
-@media (max-width: 768px) {
-  .certificados h2 {
-    font-size: 1.5rem;
-  }
-}
-
-.certificados .MuiBox-root {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-
-/* Ajustes para las tarjetas en pantallas pequeñas */
-@media (max-width: 768px) {
-  .certificados .MuiCard-root {
-    max-width: 40% !important;
-    margin: 8px auto;
-    height: fit-content;
-    max-height: 20vh !important;
-  }
-  .certificados
-  {
-    padding: 1vh;
-  }
-  .certificados .MuiCardContent-root .MuiAvatar-root
-  {
-    width: 30px !important;
-    height: 30px !important;
-  }
-  .certificados .MuiCardContent-root
-  {
-    padding: 0px;
-    padding-top: 15px !important;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .certificados .MuiCardContent-root .MuiTypography-root
-  {
-    font-size: 1vh;
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .certificados .MuiCard-root {
-    max-width:30vh !important;
+    max-width:50vh !important;
     max-height: 20vh !important;
     border: 5px solid #f0f0f0;
     border-radius: 20px;
@@ -84,7 +39,8 @@
 
   .certificados
   {
-    margin-top: auto;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .certificados .MuiBox-root
@@ -95,13 +51,13 @@
 
   .certificados .MuiCardContent-root .MuiTypography-root
   {
-    font-size: 1.8vh;
+    font-size: 1.5vh !important;
   }
 
   .certificados .MuiCardContent-root .MuiAvatar-root
   {
-    width: 3vh !important;
-    height: 3vh !important;
+    width: 2vh !important;
+    height: 2vh !important;
   }
 
   .certificados .MuiCardContent-root
@@ -111,7 +67,7 @@
 
   .certificados .MuiCardMedia-root
   {
-    height: 50px !important;
+    height: 30px !important;
   }
 
   .certificados .MuiBox-root
@@ -126,17 +82,12 @@
 
 @media screen and (max-width: 400px) {
   .certificados .MuiCard-root {
-    width: fit-content !important;
-    max-height: 15vh !important;
+    width: 25vh !important;
+    max-height: 12vh !important;
     border: 5px solid #f0f0f0;
     border-radius: 20px;
     margin: 0%;
     padding: 0%;
-  }
-
-  .certificados
-  {
-    margin-top: auto;
   }
 
   .certificados .MuiBox-root

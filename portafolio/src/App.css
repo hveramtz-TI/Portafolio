@@ -40,7 +40,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh !important;
+  height: 105vh !important;
   padding: 10px !important;
   scroll-snap-align: start;
 }

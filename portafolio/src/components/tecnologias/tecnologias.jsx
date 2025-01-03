@@ -23,7 +23,7 @@ function Tecnologias() {
       carousel.scrollLeft += 1.5;
 
       // Ajuste dinámico: reinicia cuando llega al final del contenido duplicado
-      if (carousel.scrollLeft >= carousel.scrollWidth - carousel.offsetWidth) {
+      if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
         carousel.scrollLeft = 0;
       }
     };
