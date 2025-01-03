@@ -1,11 +1,29 @@
-import React from 'react'
-import { Container, Avatar, Card, CardHeader, Chip, CardContent, Box, Grow } from '@mui/material'
-import { Email, GitHub, LinkedIn } from '@mui/icons-material'
-import imgPerfil from '/img/the-gigachad-v0-0wlf07gr2wsc1.webp'
-import contactos from '../../assets/json/contacto.json'
-import './quienSoy.css' // Importa el archivo CSS
+import React, { useState } from 'react';
+import { Container, Avatar, Card, CardHeader, Chip, CardContent, Box, Grow, Snackbar, Alert } from '@mui/material';
+import { Email, GitHub, LinkedIn } from '@mui/icons-material';
+import imgPerfil from '/img/the-gigachad-v0-0wlf07gr2wsc1.webp';
+import contactos from '../../assets/json/contacto.json';
+import './quienSoy.css'; // Importa el archivo CSS
 
 function QuienSoy() {
+    const [open, setOpen] = useState(false);
+
+    const handleClick = (contacto) => {
+        if (contacto.tipo === 'email') {
+            navigator.clipboard.writeText(contacto.valor);
+            setOpen(true);
+        } else {
+            window.open(contacto.valor, '_blank');
+        }
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setOpen(false);
+    };
+
     return (
         <div className='quien-soy'>
             <Container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 2, gap: 1 }}>
@@ -19,7 +37,7 @@ function QuienSoy() {
                                     key={index}
                                     label={contacto.tipo}
                                     component="a"
-                                    href={contacto.valor}
+                                    onClick={() => handleClick(contacto)}
                                     clickable
                                     icon={
                                         contacto.tipo === 'email' ? <Email /> :
@@ -46,8 +64,18 @@ function QuienSoy() {
                     </Card>
                 </Grow>
             </Container>
+            <Snackbar 
+                open={open} 
+                autoHideDuration={3000} 
+                onClose={handleClose}
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+                <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                    Email copiado correctamente!
+                </Alert>
+            </Snackbar>
         </div>
-    )
+    );
 }
 
-export default QuienSoy
+export default QuienSoy;
