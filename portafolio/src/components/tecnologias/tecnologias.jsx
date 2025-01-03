@@ -8,39 +8,25 @@ function Tecnologias() {
   useEffect(() => {
     const carousel = carouselRef.current;
 
-    // Duplica el contenido al cargar
-    const cloneContent = () => {
-      const items = Array.from(carousel.children);
-      items.forEach((item) => {
-        const clone = item.cloneNode(true);
-        carousel.appendChild(clone);
-      });
-    };
-
-    cloneContent();
-
-    let animationFrameId;
-
     const scrollStep = () => {
-      carousel.scrollLeft += 1;
+      // Desplazamiento más suave
+      carousel.scrollLeft += 1.5;
 
-      // Reiniciar cuando se alcanza el final de la duplicación
+      // Reiniciar cuando se alcanza el final
       if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
         carousel.scrollLeft = 0;
       }
-
-      animationFrameId = requestAnimationFrame(scrollStep);
     };
 
-    animationFrameId = requestAnimationFrame(scrollStep);
+    const interval = setInterval(scrollStep, 16); // Velocidad optimizada
 
     // Limpieza del intervalo al desmontar
-    return () => cancelAnimationFrame(animationFrameId);
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="carousel" ref={carouselRef}>
-      {tecnologias.map((tecnologia, index) => (
+      {[...tecnologias, ...tecnologias].map((tecnologia, index) => (
         <div key={index} className="carousel-item">
           <a href={tecnologia.link} target="_blank" rel="noopener noreferrer">
             <img
