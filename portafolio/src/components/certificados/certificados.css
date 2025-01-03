@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 400px) {
   .certificados .MuiCard-root {
-    width: 25vh !important;
+    width: 30vh !important;
     max-height: 12vh !important;
     border: 5px solid #f0f0f0;
     border-radius: 20px;
@@ -95,9 +95,14 @@
     height: 50%;
   }
 
+  .certificados .MuiCardContent-root 
+  {
+    display: flex;
+  }
+
   .certificados .MuiCardContent-root .MuiTypography-root
   {
-    font-size: 2vh;
+    font-size: 1.5vh !important;
   }
 
   .certificados .MuiCardContent-root .MuiAvatar-root
