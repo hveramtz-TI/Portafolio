@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Stepper, Step, StepLabel, StepContent, Button, Paper, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Grow } from '@mui/material';
-import datosExperencia from '../../assets/json/experencia.json';
 import './experencia.css'; // Importa el archivo CSS
 
-function Experencia() {
+function Experencia({data}) {
     const [activeStep, setActiveStep] = useState(null);
     const [openDialog, setOpenDialog] = useState(false);
     const [selectedExp, setSelectedExp] = useState(null);
@@ -29,7 +28,7 @@ function Experencia() {
                     Experiencia
                 </Typography>
                 <Stepper orientation="vertical" className="experiencia-stepper">
-                    {datosExperencia.map((exp, index) => (
+                    {data.map((exp, index) => (
                         <Step key={index} active>
                             <StepLabel>
                                 <Typography variant="h6">{exp.titulo}</Typography>

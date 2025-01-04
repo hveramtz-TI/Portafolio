@@ -11,9 +11,7 @@ import Grow from '@mui/material/Grow';
 import Fade from '@mui/material/Fade';
 import './proyectos.css'; // Importa el archivo CSS
 
-import proyectos from '../../assets/json/proyectos.json';
-
-function Proyectos() {
+function Proyectos({data}) {
   return (
     <div className='proyectos'>
         <Box sx={{ flexGrow: 1, padding:{xs:4,sm:3,md:4} }}>
@@ -24,7 +22,7 @@ function Proyectos() {
             </Fade>
         <Grow in={true} timeout={1000}>
         <Grid2 container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            {proyectos.map((proyecto) => (
+            {data.map((proyecto) => (
             <Grid2 item xs={4} sm={4} md={3} key={proyecto.id}>
                 <Card className="card">
                     <CardMedia

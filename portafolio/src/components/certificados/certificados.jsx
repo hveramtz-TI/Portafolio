@@ -1,5 +1,4 @@
 import React from 'react';
-import certificados from '../../assets/json/certificados.json';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -8,7 +7,7 @@ import { Box, Chip, Avatar, Grow } from '@mui/material';
 import './certificados.css';
 import Footer from '../footer/footer';
 
-function Certificados() {
+function Certificados({data}) {
   const handleCardClick = (link) => {
     window.open(link, '_blank', 'noopener,noreferrer');
   };
@@ -21,7 +20,7 @@ function Certificados() {
         </Typography>
       </Grow>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center', height: '80%' }}>
-        {certificados.map((certificado) => (
+        {data.map((certificado) => (
           <Grow in={true} timeout={1000} key={certificado.id}>
             <Card 
               sx={{ minWidth: '20vh !important', maxWidth: '40vh !important', margin: 2 }}

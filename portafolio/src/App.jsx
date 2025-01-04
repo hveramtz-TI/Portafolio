@@ -5,30 +5,45 @@ import Certificados from './components/certificados/certificados';
 import Box from '@mui/material/Box';
 import QuienSoy from './components/quienSoy/quienSoy';
 import Tecnologias from './components/tecnologias/tecnologias';
-import HeaderHamburguesa from './components/header/headerHamburguesa'; // Importa el componente HeaderHamburguesa
-import Experencia from './components/experiencia/experencia'; // Importa el componente Experencia
+import HeaderHamburguesa from './components/header/headerHamburguesa';
+import Experencia from './components/experiencia/experencia';
+
+// Importa los datos desde archivos JSON
+import proyectosDataJson from './assets/json/proyectos.json';
+import certificadosDataJson from './assets/json/certificados.json';
+import experienciaDataJson from './assets/json/experencia.json';
 
 function App() {
-  const [showProyectos, setShowProyectos] = useState(false); // Controla la visibilidad de Proyectos
-  const [showCertificados, setShowCertificados] = useState(false); // Controla la visibilidad de Certificados
-  const [showExperencia, setShowExperencia] = useState(false); // Controla la visibilidad de Experencia
-  const proyectosRef = useRef(null); // Referencia para el componente Proyectos
-  const certificadosRef = useRef(null); // Referencia para el componente Certificados
-  const experienciaRef = useRef(null); // Referencia para el componente Experencia
-  const videoRef1 = useRef(null); // Referencia para el primer video de fondo
-  const videoRef2 = useRef(null); // Referencia para el segundo video de fondo
-  const videoRef3 = useRef(null); // Referencia para el tercer video de fondo
-  const videoRef4 = useRef(null); // Referencia para el cuarto video de fondo
+  const [showProyectos, setShowProyectos] = useState(false);
+  const [showCertificados, setShowCertificados] = useState(false);
+  const [showExperencia, setShowExperencia] = useState(false);
+  const [proyectosData, setProyectosData] = useState([]);
+  const [certificadosData, setCertificadosData] = useState([]);
+  const [experenciaData, setExperenciaData] = useState([]);
+  const proyectosRef = useRef(null);
+  const certificadosRef = useRef(null);
+  const experienciaRef = useRef(null);
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
+  const videoRef3 = useRef(null);
+  const videoRef4 = useRef(null);
+
+  useEffect(() => {
+    // Carga los datos desde los archivos JSON
+    setProyectosData(proyectosDataJson);
+    setCertificadosData(certificadosDataJson);
+    setExperenciaData(experienciaDataJson);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShowProyectos(entry.isIntersecting); // Cambia el estado según la visibilidad
+        setShowProyectos(entry.isIntersecting);
       },
       {
-        root: null, // Usa la ventana como contenedor
-        rootMargin: '0px', // Sin margen adicional
-        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1,
       }
     );
 
@@ -46,12 +61,12 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShowCertificados(entry.isIntersecting); // Cambia el estado según la visibilidad
+        setShowCertificados(entry.isIntersecting);
       },
       {
-        root: null, // Usa la ventana como contenedor
-        rootMargin: '0px', // Sin margen adicional
-        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1,
       }
     );
 
@@ -69,12 +84,12 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShowExperencia(entry.isIntersecting); // Cambia el estado según la visibilidad
+        setShowExperencia(entry.isIntersecting);
       },
       {
-        root: null, // Usa la ventana como contenedor
-        rootMargin: '0px', // Sin margen adicional
-        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1,
       }
     );
 
@@ -114,8 +129,8 @@ function App() {
   }, [showProyectos, showCertificados, showExperencia]);
 
   return (
-    <Box className="App" id="home"> {/* Añade el identificador para la sección de inicio */}
-      <HeaderHamburguesa /> {/* Incluye el componente HeaderHamburguesa */}
+    <Box className="App" id="home">
+      <HeaderHamburguesa />
       <div className="video-container">
         <video
           ref={videoRef1}
@@ -124,8 +139,8 @@ function App() {
           loop
           muted
           playsInline
-          preload="auto" // Preload para mejorar tiempos de carga
-          poster="/img/posterVideo/shangai.webp" // Imagen de poster mientras se carga el video
+          preload="auto"
+          poster="/img/posterVideo/shangai.webp"
         >
           <source src="/video/battlefieldShangai.mp4" type="video/mp4" />
         </video>
@@ -136,8 +151,8 @@ function App() {
           loop
           muted
           playsInline
-          preload="auto" // Preload para mejorar tiempos de carga
-          poster="/img/posterVideo/aeropuerto.webp" // Imagen de poster mientras se carga el video
+          preload="auto"
+          poster="/img/posterVideo/aeropuerto.webp"
         >
           <source src="/video/battlefieldAeropuerto.mp4" type="video/mp4" />
         </video>
@@ -148,8 +163,8 @@ function App() {
           loop
           muted
           playsInline
-          preload="auto" // Preload para mejorar tiempos de carga
-          poster="/img/posterVideo/portaviones.webp" // Imagen de poster mientras se carga el video
+          preload="auto"
+          poster="/img/posterVideo/portaviones.webp"
         >
           <source src="/video/battlefieldNaval.mp4" type="video/mp4" />
         </video>
@@ -160,8 +175,8 @@ function App() {
           loop
           muted
           playsInline
-          preload="auto" // Preload para mejorar tiempos de carga
-          poster="/img/posterVideo/edificios.webp" // Imagen de poster mientras se carga el video
+          preload="auto"
+          poster="/img/posterVideo/edificios.webp"
         >
           <source src="/video/Battlefieldedificio.mp4" type="video/mp4" />
         </video>
@@ -171,25 +186,25 @@ function App() {
         <Tecnologias />
       </div>
       <div
-        id="experiencia" // Añade el identificador para la sección de Experiencia
+        id="experiencia"
         ref={experienciaRef}
         className={`experiencia-container ${showExperencia ? 'visible' : ''}`}
       >
-        {showExperencia && <Experencia />}
+        {showExperencia && <Experencia data={experenciaData} />}
       </div>
       <div
-        id="proyectos" // Añade el identificador para la sección de Proyectos
+        id="proyectos"
         ref={proyectosRef}
         className={`proyectos-container ${showProyectos ? 'visible' : ''}`}
       >
-        {showProyectos && <Proyectos />}
+        {showProyectos && <Proyectos data={proyectosData} />}
       </div>
       <div
-        id="certificados" // Añade el identificador para la sección de Certificados
+        id="certificados"
         ref={certificadosRef}
         className={`certificados-container ${showCertificados ? 'visible' : ''}`}
       >
-        {showCertificados && <Certificados /> }
+        {showCertificados && <Certificados data={certificadosData} />}
       </div>
     </Box>
   );
