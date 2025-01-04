@@ -8,10 +8,13 @@ function Tecnologias() {
   useEffect(() => {
     const carousel = carouselRef.current;
 
+    let interval;
+    let isScrolling = false;
+
     // Función para desplazar el carrusel
     const scrollStep = () => {
-      if (carousel) {
-        carousel.scrollLeft += 1.5; // Ajusta la velocidad según sea necesario
+      if (carousel && !isScrolling) {
+        carousel.scrollLeft += 2; // Ajusta la velocidad según sea necesario
         if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
           carousel.scrollLeft = 0; // Reinicia el desplazamiento al llegar al final
         }
@@ -19,29 +22,40 @@ function Tecnologias() {
     };
 
     // Inicia el desplazamiento automático
-    let interval = setInterval(scrollStep, 16);
-
-    // Funciones para pausar y reanudar el desplazamiento
-    const stopScroll = () => clearInterval(interval);
     const startScroll = () => {
       clearInterval(interval);
-      interval = setInterval(scrollStep, 16);
+      interval = setInterval(scrollStep, 30); // Ajusta el intervalo si es necesario
     };
 
-    // Agrega los eventos de interacción
+    // Detiene el desplazamiento automático
+    const stopScroll = () => {
+      clearInterval(interval);
+      isScrolling = true;
+    };
+
+    // Reinicia el desplazamiento después de la interacción
+    const resumeScroll = () => {
+      isScrolling = false;
+      startScroll();
+    };
+
+    // Agrega eventos de interacción
+    carousel.addEventListener('pointerdown', stopScroll);
+    carousel.addEventListener('pointerup', resumeScroll);
     carousel.addEventListener('touchstart', stopScroll);
-    carousel.addEventListener('mousedown', stopScroll);
-    carousel.addEventListener('touchend', startScroll);
-    carousel.addEventListener('mouseup', startScroll);
+    carousel.addEventListener('touchend', resumeScroll);
+
+    // Inicia el scroll al montar el componente
+    startScroll();
 
     // Limpieza de eventos y el intervalo
     return () => {
       clearInterval(interval);
       if (carousel) {
+        carousel.removeEventListener('pointerdown', stopScroll);
+        carousel.removeEventListener('pointerup', resumeScroll);
         carousel.removeEventListener('touchstart', stopScroll);
-        carousel.removeEventListener('mousedown', stopScroll);
-        carousel.removeEventListener('touchend', startScroll);
-        carousel.removeEventListener('mouseup', startScroll);
+        carousel.removeEventListener('touchend', resumeScroll);
       }
     };
   }, []);
