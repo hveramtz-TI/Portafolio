@@ -2,8 +2,8 @@
 .card {
   position: relative;
   overflow: hidden;
-  width: 250px;
-  height: 300px;
+  width: 40vh;
+  height: 43.5vh;
   border: 2px solid transparent;
   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Añade transición suave */
 }

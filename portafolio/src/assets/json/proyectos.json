@@ -28,26 +28,26 @@
   },
   {
     "id": 2,
-    "nombre": "Proyecto B",
-    "descripcion": "Este es un proyecto ficticio B.",
+    "nombre": "Medi-Mate",
+    "descripcion": "Medi-Mate es una aplicación diseñada para mejorar la experiencia de los pacientes y profesionales de la salud en la gestión de información médica. Este proyecto integra herramientas y funcionalidades clave para optimizar la administración de citas, recetas, historial médico, y recordatorios de medicación.",
     "tecnologias": [
       {
-        "nombre": "Angular",
-        "icono": "/src/assets/icons/angular-icon.png",
-        "color": "rgb(221, 0, 49)",
-        "colorHover": "rgba(221, 0, 49, 0.5)"
+      "nombre": "Kotlin",
+      "icono": "/img/tecnologiaswebp/kotlin.webp",
+      "color": "rgb(255, 87, 34)",
+      "colorHover": "rgba(255, 87, 34, 0.5)"
       },
       {
-        "nombre": "Express",
-        "icono": "/src/assets/icons/express-icon.png",
-        "color": "rgb(0, 0, 0)",
-        "colorHover": "rgba(0, 0, 0, 0.5)"
+      "nombre": "Neon",
+      "icono": "/img/tecnologiaswebp/neonserver.webp",
+      "color": "rgb(0, 150, 136)",
+      "colorHover": "rgba(0, 150, 136, 0.5)"
       },
       {
-        "nombre": "MySQL",
-        "icono": "/src/assets/icons/mysql-icon.png",
-        "color": "rgb(68, 121, 161)",
-        "colorHover": "rgba(68, 121, 161, 0.5)"
+      "nombre": "fly.io",
+      "icono": "/img/tecnologiaswebp/fly.io.webp",
+      "color": "rgb(138, 43, 226, 0.5)",
+      "colorHover": "rgba(138, 43, 226, 0.2)"
       }
     ],
     "url": "https://www.proyectoB.com",
@@ -55,26 +55,26 @@
   },
   {
     "id": 3,
-    "nombre": "Proyecto C",
-    "descripcion": "Este es un proyecto ficticio C.",
+    "nombre": "Sistema de Tickets",
+    "descripcion": "Este sistema fue desarrollado para optimizar la gestión y resolución de problemas técnicos dentro del Cuerpo de Bomberos de Viña del Mar (CBVM). Diseñado específicamente para satisfacer las necesidades operativas de la institución, centraliza y organiza las solicitudes de soporte técnico en una plataforma eficiente y fácil de usar.",
     "tecnologias": [
       {
-        "nombre": "Vue",
-        "icono": "/src/assets/icons/vue-icon.png",
-        "color": "rgb(79, 192, 141)",
-        "colorHover": "rgba(79, 192, 141, 0.5)"
+      "nombre": "React",
+      "icono": "/img/tecnologiaswebp/reactjs.webp",
+      "color": "rgb(97, 218, 251, 0.5)",
+      "colorHover": "rgba(97, 218, 251, 0.2)"
       },
       {
-        "nombre": "Django",
-        "icono": "/src/assets/icons/django-icon.png",
-        "color": "rgb(9, 46, 32)",
-        "colorHover": "rgba(9, 46, 32, 0.5)"
+      "nombre": "Neon",
+      "icono": "/img/tecnologiaswebp/neonserver.webp",
+      "color": "rgb(0, 150, 136)",
+      "colorHover": "rgba(0, 150, 136, 0.5)"
       },
       {
-        "nombre": "PostgreSQL",
-        "icono": "/src/assets/icons/postgresql-icon.png",
-        "color": "rgb(51, 103, 145)",
-        "colorHover": "rgba(51, 103, 145, 0.5)"
+      "nombre": "fly.io",
+      "icono": "/img/tecnologiaswebp/fly.io.webp",
+      "color": "rgb(138, 43, 226, 0.5)",
+      "colorHover": "rgba(138, 43, 226, 0.2)"
       }
     ],
     "url": "https://www.proyectoC.com",
@@ -82,26 +82,20 @@
   },
   {
     "id": 4,
-    "nombre": "Proyecto D",
-    "descripcion": "Este es un proyecto ficticio D.",
+    "nombre": "Sistema de Inventario",
+    "descripcion": "(En Desarrollo). Sistema de Invenatariado desarrollado en Ionic. Con sistema de escaneo de barras de productos y venta de productos.",
     "tecnologias": [
       {
-        "nombre": "Svelte",
-        "icono": "/src/assets/icons/svelte-icon.png",
-        "color": "rgb(255, 62, 0)",
-        "colorHover": "rgba(255, 62, 0, 0.5)"
+      "nombre": "Ionic",
+      "icono": "/img/tecnologiaswebp/ionic.webp",
+      "color": "rgb(63, 81, 181)",
+      "colorHover": "rgba(63, 81, 181, 0.5)"
       },
       {
-        "nombre": "Flask",
-        "icono": "/src/assets/icons/flask-icon.png",
-        "color": "rgb(0, 0, 0)",
-        "colorHover": "rgba(0, 0, 0, 0.5)"
-      },
-      {
-        "nombre": "SQLite",
-        "icono": "/src/assets/icons/sqlite-icon.png",
-        "color": "rgb(0, 59, 87)",
-        "colorHover": "rgba(0, 59, 87, 0.5)"
+      "nombre": "Neon",
+      "icono": "/img/tecnologiaswebp/neonserver.webp",
+      "color": "rgb(0, 150, 136)",
+      "colorHover": "rgba(0, 150, 136, 0.5)"
       }
     ],
     "url": "https://www.proyectoD.com",

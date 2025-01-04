@@ -123,5 +123,10 @@
         "nombre": "Axios",
         "icono": "/img/tecnologiaswebp/axios.webp",
         "link": "https://axios-http.com/"
+    },
+    {
+        "nombre": "Ionic",
+        "icono": "/img/tecnologiaswebp/ionic.webp",
+        "link": "https://ionicframework.com/"
     }
 ]
