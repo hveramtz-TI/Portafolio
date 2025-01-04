@@ -8,36 +8,41 @@ function Tecnologias() {
   useEffect(() => {
     const carousel = carouselRef.current;
 
+    // Función para desplazar el carrusel
     const scrollStep = () => {
-      carousel.scrollLeft += 1.5;
-      if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-        carousel.scrollLeft = 0;
+      if (carousel) {
+        carousel.scrollLeft += 1.5; // Ajusta la velocidad según sea necesario
+        if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+          carousel.scrollLeft = 0; // Reinicia el desplazamiento al llegar al final
+        }
       }
     };
 
+    // Inicia el desplazamiento automático
     let interval = setInterval(scrollStep, 16);
 
-    // Pausar desplazamiento automático en interacción táctil o del ratón
+    // Funciones para pausar y reanudar el desplazamiento
     const stopScroll = () => clearInterval(interval);
-
-    // Reactivar desplazamiento automático al finalizar la interacción
     const startScroll = () => {
-      clearInterval(interval); // Asegúrate de limpiar el intervalo anterior
-      interval = setInterval(scrollStep, 16); // Reinicia el intervalo
+      clearInterval(interval);
+      interval = setInterval(scrollStep, 16);
     };
 
+    // Agrega los eventos de interacción
     carousel.addEventListener('touchstart', stopScroll);
     carousel.addEventListener('mousedown', stopScroll);
     carousel.addEventListener('touchend', startScroll);
     carousel.addEventListener('mouseup', startScroll);
 
-    // Limpieza del intervalo y eventos al desmontar el componente
+    // Limpieza de eventos y el intervalo
     return () => {
       clearInterval(interval);
-      carousel.removeEventListener('touchstart', stopScroll);
-      carousel.removeEventListener('mousedown', stopScroll);
-      carousel.removeEventListener('touchend', startScroll);
-      carousel.removeEventListener('mouseup', startScroll);
+      if (carousel) {
+        carousel.removeEventListener('touchstart', stopScroll);
+        carousel.removeEventListener('mousedown', stopScroll);
+        carousel.removeEventListener('touchend', startScroll);
+        carousel.removeEventListener('mouseup', startScroll);
+      }
     };
   }, []);
 

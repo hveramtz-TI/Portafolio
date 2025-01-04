@@ -1,6 +1,6 @@
 .carousel {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     width: 80%; /* Ajusta el ancho para que ocupe todo el espacio disponible */
