@@ -2,17 +2,17 @@
   {
     "id": 1,
     "nombre": "Easy Economy",
-    "descripcion": "Easy Economy es una aplicación movil de uso para estudiantes para el aprendizaje de conceptos economicos y aplicacion web para la edicion de contenido por parte del docente.",
+    "descripcion": "Easy Economy es una aplicación móvil de uso para estudiantes para el aprendizaje de conceptos económicos y aplicación web para la edición de contenido por parte del docente.",
     "tecnologias": [
       {
         "nombre": "React",
         "icono": "/img/tecnologiaswebp/reactjs.webp",
-        "color": "rgb(97, 218, 2510, 0.5)",
+        "color": "rgb(97, 218, 251, 0.5)",
         "colorHover": "rgba(97, 218, 251, 0.2)"
       },
       {
-        "nombre": "Node.js",
-        "icono": "/img/tecnologiaswebp/nodejs.svg",
+        "nombre": "Neon",
+        "icono": "/img/tecnologiaswebp/neonserver.webp",
         "color": "rgb(51, 153, 51, 0.5)",
         "colorHover": "rgba(51, 153, 51, 0.2)"
       },
@@ -29,29 +29,29 @@
   {
     "id": 2,
     "nombre": "Medi-Mate",
-    "descripcion": "Medi-Mate es una aplicación diseñada para mejorar la experiencia de los pacientes y profesionales de la salud en la gestión de información médica. Este proyecto integra herramientas y funcionalidades clave para optimizar la administración de citas, recetas, historial médico, y recordatorios de medicación.",
+    "descripcion": "Medi-Mate es una aplicación diseñada para mejorar la experiencia de los pacientes y profesionales de la salud en la gestión de información médica. Este proyecto integra herramientas y funcionalidades clave para optimizar la administración de citas, recetas, historial médico y recordatorios de medicación.",
     "tecnologias": [
       {
-      "nombre": "Kotlin",
-      "icono": "/img/tecnologiaswebp/kotlin.webp",
-      "color": "rgb(255, 87, 34)",
-      "colorHover": "rgba(255, 87, 34, 0.5)"
+        "nombre": "Kotlin",
+        "icono": "/img/tecnologiaswebp/kotlin.webp",
+        "color": "rgb(255, 87, 34)",
+        "colorHover": "rgba(255, 87, 34, 0.5)"
       },
       {
-      "nombre": "Neon",
-      "icono": "/img/tecnologiaswebp/neonserver.webp",
-      "color": "rgb(0, 150, 136)",
-      "colorHover": "rgba(0, 150, 136, 0.5)"
+        "nombre": "Neon",
+        "icono": "/img/tecnologiaswebp/neonserver.webp",
+        "color": "rgb(0, 150, 136)",
+        "colorHover": "rgba(0, 150, 136, 0.5)"
       },
       {
-      "nombre": "fly.io",
-      "icono": "/img/tecnologiaswebp/fly.io.webp",
-      "color": "rgb(138, 43, 226, 0.5)",
-      "colorHover": "rgba(138, 43, 226, 0.2)"
+        "nombre": "fly.io",
+        "icono": "/img/tecnologiaswebp/fly.io.webp",
+        "color": "rgb(138, 43, 226, 0.5)",
+        "colorHover": "rgba(138, 43, 226, 0.2)"
       }
     ],
     "url": "https://www.proyectoB.com",
-    "imagen": null
+    "imagen": "/img/medi-mate.webp"
   },
   {
     "id": 3,
@@ -59,46 +59,52 @@
     "descripcion": "Este sistema fue desarrollado para optimizar la gestión y resolución de problemas técnicos dentro del Cuerpo de Bomberos de Viña del Mar (CBVM). Diseñado específicamente para satisfacer las necesidades operativas de la institución, centraliza y organiza las solicitudes de soporte técnico en una plataforma eficiente y fácil de usar.",
     "tecnologias": [
       {
-      "nombre": "React",
-      "icono": "/img/tecnologiaswebp/reactjs.webp",
-      "color": "rgb(97, 218, 251, 0.5)",
-      "colorHover": "rgba(97, 218, 251, 0.2)"
+        "nombre": "React",
+        "icono": "/img/tecnologiaswebp/reactjs.webp",
+        "color": "rgb(97, 218, 251, 0.5)",
+        "colorHover": "rgba(97, 218, 251, 0.2)"
       },
       {
-      "nombre": "Neon",
-      "icono": "/img/tecnologiaswebp/neonserver.webp",
-      "color": "rgb(0, 150, 136)",
-      "colorHover": "rgba(0, 150, 136, 0.5)"
+        "nombre": "Neon",
+        "icono": "/img/tecnologiaswebp/neonserver.webp",
+        "color": "rgb(0, 150, 136)",
+        "colorHover": "rgba(0, 150, 136, 0.5)"
       },
       {
-      "nombre": "fly.io",
-      "icono": "/img/tecnologiaswebp/fly.io.webp",
-      "color": "rgb(138, 43, 226, 0.5)",
-      "colorHover": "rgba(138, 43, 226, 0.2)"
+        "nombre": "fly.io",
+        "icono": "/img/tecnologiaswebp/fly.io.webp",
+        "color": "rgb(138, 43, 226, 0.5)",
+        "colorHover": "rgba(138, 43, 226, 0.2)"
       }
     ],
     "url": "https://www.proyectoC.com",
-    "imagen": null
+    "imagen": "/img/cbvm.webp"
   },
   {
     "id": 4,
     "nombre": "Sistema de Inventario",
-    "descripcion": "(En Desarrollo). Sistema de Invenatariado desarrollado en Ionic. Con sistema de escaneo de barras de productos y venta de productos.",
+    "descripcion": "(En Desarrollo). Sistema de inventariado desarrollado en Ionic. Con sistema de escaneo de barras de productos y venta de productos, con uso de gráficos interactivos para la visualización de datos.",
     "tecnologias": [
       {
-      "nombre": "Ionic",
-      "icono": "/img/tecnologiaswebp/ionic.webp",
-      "color": "rgb(63, 81, 181)",
-      "colorHover": "rgba(63, 81, 181, 0.5)"
+        "nombre": "Ionic",
+        "icono": "/img/tecnologiaswebp/ionic.webp",
+        "color": "rgb(63, 81, 181)",
+        "colorHover": "rgba(63, 81, 181, 0.5)"
       },
       {
-      "nombre": "Neon",
-      "icono": "/img/tecnologiaswebp/neonserver.webp",
-      "color": "rgb(0, 150, 136)",
-      "colorHover": "rgba(0, 150, 136, 0.5)"
+        "nombre": "Neon",
+        "icono": "/img/tecnologiaswebp/neonserver.webp",
+        "color": "rgb(0, 150, 136)",
+        "colorHover": "rgba(0, 150, 136, 0.5)"
+      },
+      {
+        "nombre": "fly.io",
+        "icono": "/img/tecnologiaswebp/fly.io.webp",
+        "color": "rgb(138, 43, 226, 0.5)",
+        "colorHover": "rgba(138, 43, 226, 0.2)"
       }
     ],
     "url": "https://www.proyectoD.com",
-    "imagen": null
+    "imagen": "/img/enDesarrollo.webp"
   }
 ]

@@ -9,6 +9,10 @@ import './certificados.css';
 import Footer from '../footer/footer';
 
 function Certificados() {
+  const handleCardClick = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className='certificados'>
       <Grow in={true} timeout={1000}>
@@ -19,7 +23,11 @@ function Certificados() {
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center', height: '80%' }}>
         {certificados.map((certificado) => (
           <Grow in={true} timeout={1000} key={certificado.id}>
-            <Card sx={{ minWidth: '20vh !important', maxWidth: '40vh !important', margin: 2 }}>
+            <Card 
+              sx={{ minWidth: '20vh !important', maxWidth: '40vh !important', margin: 2 }}
+              onClick={() => handleCardClick(certificado.link)}
+              style={{ cursor: 'pointer' }}
+            >
               <CardMedia
                 component="img"
                 height="140"

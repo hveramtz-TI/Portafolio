@@ -1,15 +1,15 @@
 {
   "contactos": [
     {
-      "tipo": "email",
+      "tipo": "Email",
       "valor": "hvera.informatico@gmail.com"
     },
     {
-      "tipo": "github",
+      "tipo": "Github",
       "valor": "https://github.com/hveramtz-TI"
     },
     {
-      "tipo": "linkedin",
+      "tipo": "Linkedin",
       "valor": "https://www.linkedin.com/in/hector-vera-martinez-501746260/"
     }
   ]

@@ -40,15 +40,15 @@ function QuienSoy() {
                                     onClick={() => handleClick(contacto)}
                                     clickable
                                     icon={
-                                        contacto.tipo === 'email' ? <Email /> :
-                                        contacto.tipo === 'github' ? <GitHub /> :
-                                        contacto.tipo === 'linkedin' ? <LinkedIn /> :
+                                        contacto.tipo === 'Email' ? <Email /> :
+                                        contacto.tipo === 'Github' ? <GitHub /> :
+                                        contacto.tipo === 'Linkedin' ? <LinkedIn /> :
                                         null
                                     }
                                     className={
-                                        contacto.tipo === 'email' ? 'chip-email' :
-                                        contacto.tipo === 'github' ? 'chip-github' :
-                                        contacto.tipo === 'linkedin' ? 'chip-linkedin' :
+                                        contacto.tipo === 'Email' ? 'chip-email' :
+                                        contacto.tipo === 'Github' ? 'chip-github' :
+                                        contacto.tipo === 'Linkedin' ? 'chip-linkedin' :
                                         ''
                                     }
                                 />
