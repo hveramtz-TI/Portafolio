@@ -50,42 +50,39 @@
     padding: 0%;
   }
 
-  .certificados
-  {
+  .certificados {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .certificados .MuiBox-root
-  {
+  .certificados .MuiBox-root {
     margin-bottom: 0vh !important;
     height: fit-content !important;
   }
 
-  .certificados .MuiCardContent-root .MuiTypography-root
-  {
+  .certificados .MuiCardContent-root .MuiTypography-root {
     font-size: 1.5vh !important;
+    text-align: center;
   }
 
-  .certificados .MuiCardContent-root .MuiAvatar-root
-  {
+  .certificados .MuiCardContent-root .MuiAvatar-root {
     width: 2vh !important;
     height: 2vh !important;
   }
 
-  .certificados .MuiCardContent-root
-  {
-    padding: 0px !important;
+  .certificados .MuiCardContent-root {
+    padding: 2px !important;
     display: flex !important;
+    flex-direction: row !important;
+    margin: auto !important;
+    height: 8vh;
   }
 
-  .certificados .MuiCardMedia-root
-  {
+  .certificados .MuiCardMedia-root {
     height: 30px !important;
   }
 
-  .certificados .MuiBox-root
-  {
+  .certificados .MuiBox-root {
     gap:10px;
   }
 
@@ -93,6 +90,7 @@
     width: 20px !important;
     height: 20px !important;
   }
+}
 
 @media screen and (max-width: 400px) {
   .certificados .MuiCard-root {
@@ -104,56 +102,53 @@
     padding: 0%;
   }
 
-  .certificados .MuiBox-root
-  {
+  .certificados .MuiBox-root {
     height: 50%;
   }
 
-  .certificados .MuiCardContent-root 
-  {
+  .certificados .MuiCardContent-root {
     display: flex !important;
     flex-direction: row !important;
     margin: auto !important;
     height: 8vh;
   }
 
-  .certificados .MuiCardContent-root .MuiTypography-root
-  {
+  .certificados .MuiCardContent-root .MuiTypography-root {
     font-size: 1.5vh !important;
     height: auto !important;
     max-width: 25vh;
   }
 
-  .certificados .MuiCardContent-root .MuiChip-label
-  {
+  .certificados .MuiCardContent-root .MuiChip-label {
     display: none !important;
   }
 
-  .certificados .MuiCardContent-root .MuiAvatar-root
-  {
+  .certificados .MuiCardContent-root .MuiAvatar-root {
     width: 2.5vh !important;
     height: 2.5vh !important;
+    margin: 0%;
   }
 
-  .certificados .MuiCardContent-root
-  {
+  .certificados .MuiCardContent-root {
     padding: 2px !important;
   }
 
-  .certificados .MuiCardMedia-root
-  {
+  .certificados .MuiCardMedia-root {
     height: 5vh!important;
   }
 
-  .certificados .MuiBox-root
-  {
+  .certificados .MuiChip-root {
+    width: 4vh !important;
+    height: 4vh !important;
+    margin-left: 1vh;
+  }
+
+  .certificados .MuiBox-root {
     gap:10px;
   }
 
   .MuiAvatar-root {
     width: 20px !important;
     height: 20px !important;
-  
-  }
   }
 }

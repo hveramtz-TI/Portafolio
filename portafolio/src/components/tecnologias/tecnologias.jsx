@@ -9,19 +9,36 @@ function Tecnologias() {
     const carousel = carouselRef.current;
 
     const scrollStep = () => {
-      // Desplazamiento más suave
       carousel.scrollLeft += 1.5;
-
-      // Reiniciar cuando se alcanza el final
       if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
         carousel.scrollLeft = 0;
       }
     };
 
-    const interval = setInterval(scrollStep, 16); // Velocidad optimizada
+    let interval = setInterval(scrollStep, 16);
 
-    // Limpieza del intervalo al desmontar
-    return () => clearInterval(interval);
+    // Pausar desplazamiento automático en interacción táctil o del ratón
+    const stopScroll = () => clearInterval(interval);
+
+    // Reactivar desplazamiento automático al finalizar la interacción
+    const startScroll = () => {
+      clearInterval(interval); // Asegúrate de limpiar el intervalo anterior
+      interval = setInterval(scrollStep, 16); // Reinicia el intervalo
+    };
+
+    carousel.addEventListener('touchstart', stopScroll);
+    carousel.addEventListener('mousedown', stopScroll);
+    carousel.addEventListener('touchend', startScroll);
+    carousel.addEventListener('mouseup', startScroll);
+
+    // Limpieza del intervalo y eventos al desmontar el componente
+    return () => {
+      clearInterval(interval);
+      carousel.removeEventListener('touchstart', stopScroll);
+      carousel.removeEventListener('mousedown', stopScroll);
+      carousel.removeEventListener('touchend', startScroll);
+      carousel.removeEventListener('mouseup', startScroll);
+    };
   }, []);
 
   return (

@@ -18,6 +18,7 @@
     justify-content: center;
     margin-top: 50px;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Habilita la inercia en iOS */
     scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
 }
 
@@ -27,8 +28,11 @@
 
 .carousel-item {
     display: inline-flex;
-    margin-right: 30px; /* Espacio entre las imágenes */
-    cursor: pointer; /* Asegúrate de que el cursor cambie al pasar sobre el elemento */
+    margin-right: 0px; /* Espacio entre las imágenes */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
+    flex-shrink: 0; /* Evita que los elementos se reduzcan */
+    width: auto; /* Ajusta el ancho según tus necesidades */
+    margin: 2vh;
 }
 
 .carousel-item:last-child {
@@ -39,8 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .carousel-item img {
@@ -54,14 +58,14 @@
 
 .carousel-item img:hover {
     transform: scale(1.1);
-    filter: grayscale(0%); /* Elimina el filtro de blanco y negro al pasar el cursor */
+    filter: grayscale(0%); /* Elimina el filtro al pasar el cursor */
 }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .carousel {
-        width: 80%; /* Ajusta el ancho del carrusel para móviles */
-        height: 8vh; /* Ajusta la altura del carrusel para móviles */
+        width: 80%; /* Ajusta el ancho para móviles */
+        height: 8vh; /* Ajusta la altura para móviles */
         margin: 1vh;
     }
 
