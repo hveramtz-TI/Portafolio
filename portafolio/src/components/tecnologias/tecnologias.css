@@ -3,7 +3,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    width: 100%; /* Ajusta el ancho para que ocupe todo el espacio disponible */
+    width: 80%; /* Ajusta el ancho para que ocupe todo el espacio disponible */
     background: rgb(198,198,198);
     background: radial-gradient(circle, rgba(198,198,198,0.3) 0%, rgba(0,0,0,0.3) 100%);
     height: 10vh;
@@ -64,7 +64,7 @@
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .carousel {
-        width: 100%; /* Ajusta el ancho para móviles */
+        width: 80%; /* Ajusta el ancho para móviles */
         height: 8vh; /* Ajusta la altura para móviles */
         margin: 1vh;
     }
