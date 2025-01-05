@@ -68,11 +68,6 @@
   box-shadow: var(--hover-shadow) !important;
 }
 
-.parrafo {
-  margin: 0;
-  font-size: large;
-}
-
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 600px) {
   .quien-soy .MuiContainer-root {
@@ -112,19 +107,18 @@
 
   .quien-soy .card-hover {
     width: 35vh !important;
-    height: 25vh !important;
+    height: fit-content !important;
   }
 
   .quien-soy .card-hover .MuiCardContent-root {
     padding: 1vh !important;
   }
 
-  .quien-soy .parrafo {
-    font-size: auto !important;
-    line-height: 1 !important;
-    padding: 0 !important;
+  .quien-soy .card-hover p
+  {
+    height: 100%;
     text-align: center;
-    font-size: 2.3vh;
+    margin: 0%;
   }
 
   .quien-soy .MuiCardHeader-root {
