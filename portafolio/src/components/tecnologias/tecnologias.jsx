@@ -62,7 +62,7 @@ function Tecnologias() {
 
   return (
     <div className="carousel" ref={carouselRef}>
-      {[...tecnologias, ...tecnologias].map((tecnologia, index) => (
+      {tecnologias.map((tecnologia, index) => (
         <div key={index} className="carousel-item">
           <a href={tecnologia.link} target="_blank" rel="noopener noreferrer">
             <img

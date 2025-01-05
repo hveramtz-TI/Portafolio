@@ -1,71 +1,58 @@
+/* Variables CSS */
+:root {
+  --primary-color: #aba8a8;
+  --border-color: #060202;
+  --hover-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  --transition-duration: 0.3s;
+}
+
 /* Estilos para chips */
+.chip-email, .chip-github, .chip-linkedin {
+  border: 1px solid var(--border-color) !important;
+  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease, box-shadow var(--transition-duration) ease !important;
+}
+
 .chip-email {
   background-color: #ffffff !important;
   color: black !important;
-  border: 1px solid #000000 !important;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .chip-email:hover {
   background-color: #b9b9b9 !important;
   color: white !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: var(--hover-shadow) !important;
 }
 
 .chip-github {
   background-color: #060202 !important;
   color: white !important;
-  border: 1px solid #000 !important;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
-}
-
-.chip-github .MuiChip-label
-{
-  color: white !important;
 }
 
 .chip-github:hover {
   background-color: #620296 !important;
+  box-shadow: var(--hover-shadow) !important;
+}
+
+.chip-github .MuiChip-icon, .chip-linkedin .MuiChip-icon {
+  transition: color var(--transition-duration) ease !important;
+}
+
+.chip-github:hover .MuiChip-icon, .chip-linkedin:hover .MuiChip-icon {
   color: white !important;
-  box-shadow: 0 0 10px rgba(98, 2, 150, 0.5) !important;
-}
-
-.chip-github .MuiChip-icon {
-  transition: color 0.3s ease !important; /* Añade transición al color del icono */
-}
-
-.chip-github:hover .MuiChip-icon {
-  color: white !important; /* Cambia el color del icono a blanco al hacer hover */
 }
 
 .chip-linkedin {
   background-color: #005f92 !important;
-  border: 1px solid #005582 !important;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
-}
-
-.chip-linkedin .MuiChip-label
-{
-  color: white !important;
 }
 
 .chip-linkedin:hover {
   background-color: #0085cc !important;
-  color: white !important;
-  box-shadow: 0 0 10px rgba(0, 119, 181, 0.5) !important;
-}
-
-.chip-linkedin .MuiChip-icon {
-  transition: color 0.3s ease !important; /* Añade transición al color del icono */
-}
-
-.chip-linkedin:hover .MuiChip-icon {
-  color: white !important; /* Cambia el color del icono a blanco al hacer hover */
+  box-shadow: var(--hover-shadow) !important;
 }
 
 /* Efecto de hover para el avatar en el icono */
 .chip-avatar {
-  transition: transform 0.3s ease !important;
+  transition: transform var(--transition-duration) ease !important;
 }
 
 .chip-avatar:hover {
@@ -78,11 +65,11 @@
 }
 
 .card-hover:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8) !important;
+  box-shadow: var(--hover-shadow) !important;
 }
 
 .parrafo {
-  margin: 0%;
+  margin: 0;
   font-size: large;
 }
 
@@ -93,69 +80,62 @@
   }
 
   .quien-soy .MuiAvatar-root {
-    width: 10vh !important; /* Ajusta el ancho de la imagen del avatar */
-    height: 10vh !important; /* Ajusta la altura de la imagen del avatar */
+    width: 10vh !important;
+    height: 10vh !important;
   }
 
   .quien-soy .MuiCardHeader-root {
-    padding: 1vh !important; /* Ajusta el padding del encabezado de la tarjeta */
+    padding: 1vh !important;
   }
 
-  .quien-soy .MuiCardHeader-root .MuiTypography-root
-  {
-    font-size: 2vh !important; /* Ajusta el tamaño de la fuente del encabezado */
+  .quien-soy .MuiCardHeader-root .MuiTypography-root {
+    font-size: 2vh !important;
   }
 
-  .quien-soy .MuiPaper-root .MuiCardContent-root
-  {
-    padding: 0vh !important; /* Ajusta el padding del contenido de la tarjeta */
+  .quien-soy .MuiPaper-root .MuiCardContent-root {
+    padding: 0vh !important;
   }
 
-  .quien-soy .MuiCardContent-root .MuiChip-root
-  {
+  .quien-soy .MuiCardContent-root .MuiChip-root {
     width: auto !important;
     height: auto !important;
   }
 
-  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-icon
-  {
-    margin: 0%;
+  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-icon {
+    margin: 0;
     padding: 1vh;
   }
 
-  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-label
-  {
+  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-label {
     display: none !important;
   }
 
   .quien-soy .card-hover {
-    width: 35vh !important; /* Ajusta el ancho de la tarjeta al 80% del contenedor */
-    height: 25vh !important; /* Ajusta la altura de la tarjeta al 20% del contenedor */
+    width: 35vh !important;
+    height: 25vh !important;
   }
 
   .quien-soy .card-hover .MuiCardContent-root {
-    padding: 1vh !important; /* Ajusta el padding del contenido */
+    padding: 1vh !important;
   }
 
   .quien-soy .parrafo {
-    font-size: auto !important; /* Ajusta el tamaño de la fuente */
-    line-height: 1 !important; /* Ajusta la altura de línea */
-    padding: 0% !important;
+    font-size: auto !important;
+    line-height: 1 !important;
+    padding: 0 !important;
     text-align: center;
     font-size: 2.3vh;
   }
 
   .quien-soy .MuiCardHeader-root {
-    text-align: center !important; /* Centra el texto del encabezado */
+    text-align: center !important;
   }
 
-  .quien-soy .MuiContainer-root
-  {
+  .quien-soy .MuiContainer-root {
     padding: 0vh !important;
   }
 
-  .quien-soy .MuiCardHeader-root
-  {
+  .quien-soy .MuiCardHeader-root {
     padding: 0vh !important;
   }
 }

@@ -1,9 +1,21 @@
+/* Variables CSS */
+:root {
+  --experiencia-bg-color: rgba(171, 168, 168, 0.6);
+  --experiencia-border-color: #f2f2f2ad;
+  --experiencia-button-bg-color: rgba(203, 123, 18, 0.781);
+  --experiencia-button-hover-shadow: 0 0 10px rgba(203, 123, 18, 0.781), 0 0 20px rgba(203, 123, 18, 0.781), 0 0 30px rgba(203, 123, 18, 0.781);
+  --experiencia-transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 .experiencia-paper {
-    background-color: rgba(171, 168, 168, 0.6) !important;
-    margin-top: 4vh !important; 
-    height: 65vh  !important;
-    border: 3px solid #f2f2f2ad !important;
-    border-radius: 10px !important;
+  background-color: var(--experiencia-bg-color) !important;
+  margin-top: 4vh !important;
+  height: 65vh !important;
+  border: 3px solid var(--experiencia-border-color) !important;
+  border-radius: 10px !important;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
 }
 
 .experiencia-container.visible {
@@ -11,22 +23,12 @@
   transform: translateY(0);
 }
 
-.MuiStepIcon-root
-{
-    color: rgba(0, 0, 0, 0.7) !important;
+.MuiStepIcon-root {
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
-
-.MuiButton-root
-{
-    background-color: rgba(203, 123, 18, 0.781) !important;
-}
-
-.experiencia-paper {
-  padding: 20px;
-  margin-top: 20px;
-  width: 80%;
-  max-width: 800px;
+.MuiButton-root {
+  background-color: var(--experiencia-button-bg-color) !important;
 }
 
 .experiencia-stepper {
@@ -34,22 +36,20 @@
 }
 
 .experiencia-button {
-    margin-top: 10px;
-    background-color: rgba(203, 123, 18, 0.781) !important;
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-    color: black !important;
-  }
-  
-  .experiencia-button:hover {
-    box-shadow: 0 0 10px rgba(203, 123, 18, 0.781), 0 0 20px rgba(203, 123, 18, 0.781), 0 0 30px rgba(203, 123, 18, 0.781);
-    transform: scale(1.05);
-  }
+  margin-top: 10px;
+  background-color: var(--experiencia-button-bg-color) !important;
+  transition: var(--experiencia-transition);
+  color: black !important;
+}
 
-  .MuiButtonBase-root
-  {
-    color: black !important;
-  }
-  
+.experiencia-button:hover {
+  box-shadow: var(--experiencia-button-hover-shadow);
+  transform: scale(1.05);
+}
+
+.MuiButtonBase-root {
+  color: black !important;
+}
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {

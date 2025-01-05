@@ -1,3 +1,13 @@
+/* Variables CSS */
+:root {
+  --video-filter-brightness: brightness(40%);
+  --container-height: 105vh;
+  --container-padding: 10px;
+  --container-transition: opacity 0.5s ease, transform 0.5s ease;
+  --container-transform: translateY(20px);
+  --container-transform-visible: translateY(0);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -21,9 +31,9 @@ html, body {
   object-fit: cover;
   z-index: -1;
   transition: opacity 1s ease;
-  filter: brightness(40%); /* Aplica un filtro oscuro */
-  pointer-events: none; /* Hace que el video no sea clickeable */
-  display: block; /* Asegura que el video se muestre como un bloque */
+  filter: var(--video-filter-brightness);
+  pointer-events: none;
+  display: block;
 }
 
 .video-background.hidden {
@@ -40,8 +50,8 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 105vh !important;
-  padding: 10px !important;
+  height: var(--container-height);
+  padding: var(--container-padding);
   scroll-snap-align: start;
 }
 
@@ -49,15 +59,15 @@ html, body {
 .certificados-container,
 .experiencia-container {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: var(--container-transform);
+  transition: var(--container-transition);
 }
 
 .proyectos-container.visible,
 .certificados-container.visible,
 .experiencia-container.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: var(--container-transform-visible);
 }
 
 @media screen and (max-width: 600px) {

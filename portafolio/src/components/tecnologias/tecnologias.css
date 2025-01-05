@@ -1,64 +1,73 @@
+/* Variables CSS */
+:root {
+  --carousel-bg: radial-gradient(circle, rgba(198,198,198,0.3) 0%, rgba(0,0,0,0.3) 100%);
+  --carousel-border-color: #c6c6c6;
+  --carousel-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  --carousel-item-hover-scale: 1.1;
+  --carousel-item-hover-filter: grayscale(0%);
+  --carousel-item-filter: grayscale(95%);
+  --carousel-item-transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
+}
+
 .carousel {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 80%;
+  background: var(--carousel-bg);
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0;
+  border-left: 3px solid var(--carousel-border-color);
+  border-right: 3px solid var(--carousel-border-color);
+  border-radius: 10px;
+  box-shadow: var(--carousel-box-shadow);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  display: inline-flex;
+  margin-right: 0px;
+  cursor: pointer;
+  flex-shrink: 0;
+  width: auto;
+  margin: 2vh;
+  padding-top: 1vh;
+}
+
+.carousel-item img {
+  max-height: 9vh;
+  object-fit: cover;
+  max-width: 20vh;
+  transition: var(--carousel-item-transition);
+  filter: var(--carousel-item-filter);
+}
+
+.carousel-item img:hover {
+  transform: scale(var(--carousel-item-hover-scale));
+  filter: var(--carousel-item-hover-filter);
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 8vh;
+    margin: 1vh;
     width: 80%;
-    background: rgb(198,198,198);
-    background: radial-gradient(circle, rgba(198,198,198,0.3) 0%, rgba(0,0,0,0.3) 100%);
-    height: 10vh;
-    margin: 0 auto;
-    padding: 0;
-    border-left: 3px solid #c6c6c6;
-    border-right: 3px solid #c6c6c6;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
   }
-  
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .carousel-item {
-    display: inline-flex;
-    margin-right: 0px;
-    cursor: pointer;
-    flex-shrink: 0;
-    width: auto;
-    margin: 2vh;
-    padding-top: 1vh;
-  }
-  
+
   .carousel-item img {
-    max-height: 9vh;
-    object-fit: cover;
-    max-width: 20vh;
-    transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
-    filter: grayscale(95%);
+    max-height: 6vh;
+    max-width: 8vh;
   }
-  
-  .carousel-item img:hover {
-    transform: scale(1.1);
-    filter: grayscale(0%);
-  }
-  
-  @media (max-width: 768px) {
-    .carousel {
-      height: 8vh;
-      margin: 1vh;
-      width: 80%;
-    }
-  
-    .carousel-item img {
-      max-height: 6vh;
-      max-width: 8vh;
-    }
-  }
-  
+}

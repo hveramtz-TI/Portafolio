@@ -10,6 +10,8 @@ body {
   overflow: hidden; /* Oculta el scroll mientras se carga */
 }
 
+
+
 .loading-screen {
   position: fixed;
   top: 0;
@@ -126,4 +128,6 @@ body {
     filter: blur(2px) brightness(0.9); /* Ajusta la visibilidad */
   }
 }
+
+
 

@@ -27,7 +27,7 @@ function QuienSoy() {
     return (
         <div className='quien-soy'>
             <Container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 2, gap: 1 }}>
-                <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '50vh', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
+                <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '50vh', backgroundColor: 'var(--primary-color)', border: '1px solid var(--border-color)', borderRadius: '20px' }}>
                     <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: '25vh', height: '25vh' }} />
                     <CardHeader title="Hector Vera Martinez" subheader="Ingeniero de Ejecucion en Informatica" />
                     <CardContent sx={{ padding: '0px !important' }}>
@@ -57,8 +57,8 @@ function QuienSoy() {
                     </CardContent>
                 </Card>
                 <Grow in={true}>
-                    <Card className="card-hover" sx={{ padding: 1 , width:'60vh', height:'auto', backgroundColor: '#aba8a8', border:'1px solid #060202', borderRadius:'20px' }}>
-                        <CardContent sx={{paddingBottom:'16px !important'}}>
+                    <Card className="card-hover" sx={{ padding: 1, width: '60vh', height: 'auto', backgroundColor: 'var(--primary-color)', border: '1px solid var(--border-color)', borderRadius: '20px' }}>
+                        <CardContent sx={{ paddingBottom: '16px !important' }}>
                             <p className='parrafo'>Me apasiona resolver problemas reales a través del desarrollo de software, enfocándome en comprender las necesidades de los usuarios y diseñar soluciones tecnológicas que brinden valor y mejoren la vida de las personas. Disfruto del desarrollo web y móvil, y siempre busco mejorar mis habilidades y conocimientos.</p>
                         </CardContent>
                     </Card>

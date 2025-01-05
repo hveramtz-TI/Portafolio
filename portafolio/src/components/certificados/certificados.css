@@ -1,35 +1,48 @@
+/* Variables CSS */
+:root {
+  --certificados-padding: 100px;
+  --certificados-card-max-width: 250px;
+  --certificados-card-height: 300px;
+  --certificados-card-border: 5px solid #f0f0f0;
+  --certificados-card-border-radius: 20px;
+  --certificados-card-bg-color: #f2f2f2b6;
+  --certificados-typography-font-size: 2vh;
+  --certificados-typography-bg-color: #f2f2f2;
+  --certificados-typography-padding: 0.5vh;
+  --certificados-typography-border: 1px solid #00000079;
+  --certificados-typography-border-radius: 10px;
+}
+
 .certificados h2 {
   font-size: 2rem;
   margin-bottom: 16px;
 }
 
-.certificados 
-{
-  padding-left: 100px;
-  padding-right: 100px;
+.certificados {
+  padding-left: var(--certificados-padding);
+  padding-right: var(--certificados-padding);
 }
 
 .certificados .MuiCard-root {
-  max-width: 250px;
-  height: 300px;
-  border: 5px solid #f0f0f0;
-  border-radius: 20px;
+  max-width: var(--certificados-card-max-width);
+  height: var(--certificados-card-height);
+  border: var(--certificados-card-border);
+  border-radius: var(--certificados-card-border-radius);
   margin: 0px;
   padding: 0px;
-  background-color: #f2f2f2b6;
+  background-color: var(--certificados-card-bg-color);
 }
 
 .certificados .MuiCardContent-root .MuiTypography-root {
   max-height: 100px;
-  font-size: 2vh;
-  background-color: #f2f2f2;
-  padding: 0.5vh;
-  border: 1px solid #00000079;
-  border-radius: 10px;
+  font-size: var(--certificados-typography-font-size);
+  background-color: var(--certificados-typography-bg-color);
+  padding: var(--certificados-typography-padding);
+  border: var(--certificados-typography-border);
+  border-radius: var(--certificados-typography-border-radius);
 }
 
-.certificados .MuiCardContent-root
-{
+.certificados .MuiCardContent-root {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,15 +50,15 @@
 }
 
 .certificados .MuiCardMedia-root {
-  height:200px;
+  height: 200px;
 }
 
 @media screen and (max-width: 600px) {
   .certificados .MuiCard-root {
-    width:30vh !important;
+    width: 30vh !important;
     max-height: fit-content !important;
-    border: 5px solid #f0f0f0;
-    border-radius: 20px;
+    border: var(--certificados-card-border);
+    border-radius: var(--certificados-card-border-radius);
     margin: 0%;
     padding: 0%;
   }
@@ -83,7 +96,7 @@
   }
 
   .certificados .MuiBox-root {
-    gap:10px;
+    gap: 10px;
   }
 
   .MuiAvatar-root {
@@ -96,8 +109,8 @@
   .certificados .MuiCard-root {
     width: 35vh !important;
     max-height: 12vh !important;
-    border: 5px solid #f0f0f0;
-    border-radius: 20px;
+    border: var(--certificados-card-border);
+    border-radius: var(--certificados-card-border-radius);
     margin: 0%;
     padding: 0%;
   }
@@ -134,7 +147,7 @@
   }
 
   .certificados .MuiCardMedia-root {
-    height: 5vh!important;
+    height: 5vh !important;
   }
 
   .certificados .MuiChip-root {
@@ -144,7 +157,7 @@
   }
 
   .certificados .MuiBox-root {
-    gap:10px;
+    gap: 10px;
   }
 
   .MuiAvatar-root {

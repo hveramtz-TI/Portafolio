@@ -7,7 +7,7 @@ import { Box, Chip, Avatar, Grow } from '@mui/material';
 import './certificados.css';
 import Footer from '../footer/footer';
 
-function Certificados({data}) {
+function Certificados({ data }) {
   const handleCardClick = (link) => {
     window.open(link, '_blank', 'noopener,noreferrer');
   };
