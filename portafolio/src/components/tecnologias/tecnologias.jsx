@@ -68,7 +68,7 @@ function Tecnologias() {
             <img
               src={tecnologia.icono}
               alt={tecnologia.nombre}
-              style={{ cursor: 'pointer' }}
+              style={{ cursor: 'pointer', width: '8vh', height: '8vh', objectFit: 'contain' }} 
             />
           </a>
         </div>

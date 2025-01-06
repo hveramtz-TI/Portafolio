@@ -47,9 +47,7 @@
 }
 
 .carousel-item img {
-  max-height: 9vh;
   object-fit: cover;
-  max-width: 20vh;
   transition: var(--carousel-item-transition);
   filter: var(--carousel-item-filter);
 }
