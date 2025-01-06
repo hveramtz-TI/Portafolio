@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@vercel/speed-insights/react', '@vercel/analytics/react'],
       output: {
         manualChunks: {
+          // Divide las dependencias en diferentes chunks
           react: ['react', 'react-dom'],
           mui: ['@mui/material', '@emotion/react', '@emotion/styled'],
         },
