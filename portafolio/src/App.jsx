@@ -14,15 +14,9 @@ import certificadosDataJson from './assets/json/certificados.json';
 import experienciaDataJson from './assets/json/experencia.json';
 
 function App() {
-  const [showProyectos, setShowProyectos] = useState(false);
-  const [showCertificados, setShowCertificados] = useState(false);
-  const [showExperencia, setShowExperencia] = useState(false);
   const [proyectosData, setProyectosData] = useState([]);
   const [certificadosData, setCertificadosData] = useState([]);
   const [experenciaData, setExperenciaData] = useState([]);
-  const proyectosRef = useRef(null);
-  const certificadosRef = useRef(null);
-  const experienciaRef = useRef(null);
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
   const videoRef3 = useRef(null);
@@ -36,97 +30,11 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowProyectos(entry.isIntersecting);
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1,
-      }
-    );
-
-    if (proyectosRef.current) {
-      observer.observe(proyectosRef.current);
-    }
-
-    return () => {
-      if (proyectosRef.current) {
-        observer.unobserve(proyectosRef.current);
-      }
-    };
+    videoRef1.current.classList.remove('hidden');
+    videoRef2.current.classList.add('hidden');
+    videoRef3.current.classList.add('hidden');
+    videoRef4.current.classList.add('hidden');
   }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowCertificados(entry.isIntersecting);
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1,
-      }
-    );
-
-    if (certificadosRef.current) {
-      observer.observe(certificadosRef.current);
-    }
-
-    return () => {
-      if (certificadosRef.current) {
-        observer.unobserve(certificadosRef.current);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowExperencia(entry.isIntersecting);
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1,
-      }
-    );
-
-    if (experienciaRef.current) {
-      observer.observe(experienciaRef.current);
-    }
-
-    return () => {
-      if (experienciaRef.current) {
-        observer.unobserve(experienciaRef.current);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (showProyectos) {
-      videoRef1.current.classList.add('hidden');
-      videoRef2.current.classList.remove('hidden');
-      videoRef3.current.classList.add('hidden');
-      videoRef4.current.classList.add('hidden');
-    } else if (showCertificados) {
-      videoRef1.current.classList.add('hidden');
-      videoRef2.current.classList.add('hidden');
-      videoRef3.current.classList.remove('hidden');
-      videoRef4.current.classList.add('hidden');
-    } else if (showExperencia) {
-      videoRef1.current.classList.add('hidden');
-      videoRef2.current.classList.add('hidden');
-      videoRef3.current.classList.add('hidden');
-      videoRef4.current.classList.remove('hidden');
-    } else {
-      videoRef1.current.classList.remove('hidden');
-      videoRef2.current.classList.add('hidden');
-      videoRef3.current.classList.add('hidden');
-      videoRef4.current.classList.add('hidden');
-    }
-  }, [showProyectos, showCertificados, showExperencia]);
 
   return (
     <Box className="App" id="home">
@@ -181,26 +89,14 @@ function App() {
         <QuienSoy />
         <Tecnologias />
       </div>
-      <div
-        id="experiencia"
-        ref={experienciaRef}
-        className={`experiencia-container ${showExperencia ? 'visible' : ''}`}
-      >
-        {showExperencia && <Experencia data={experenciaData} />}
+      <div id="experiencia" className="experiencia-container">
+        <Experencia data={experenciaData} />
       </div>
-      <div
-        id="proyectos"
-        ref={proyectosRef}
-        className={`proyectos-container ${showProyectos ? 'visible' : ''}`}
-      >
-        {showProyectos && <Proyectos data={proyectosData} />}
+      <div id="proyectos" className="proyectos-container">
+        <Proyectos data={proyectosData} />
       </div>
-      <div
-        id="certificados"
-        ref={certificadosRef}
-        className={`certificados-container ${showCertificados ? 'visible' : ''}`}
-      >
-        {showCertificados && <Certificados data={certificadosData} />}
+      <div id="certificados" className="certificados-container">
+        <Certificados data={certificadosData} />
       </div>
     </Box>
   );

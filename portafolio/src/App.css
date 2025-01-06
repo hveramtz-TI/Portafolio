@@ -55,21 +55,6 @@ html, body {
   scroll-snap-align: start;
 }
 
-.proyectos-container,
-.certificados-container,
-.experiencia-container {
-  opacity: 0;
-  transform: var(--container-transform);
-  transition: var(--container-transition);
-}
-
-.proyectos-container.visible,
-.certificados-container.visible,
-.experiencia-container.visible {
-  opacity: 1;
-  transform: var(--container-transform-visible);
-}
-
 @media screen and (max-width: 600px) {
   .quienSoy,
   .proyectos-container,
