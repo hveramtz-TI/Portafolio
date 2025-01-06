@@ -17,10 +17,14 @@ function App() {
   const [proyectosData, setProyectosData] = useState([]);
   const [certificadosData, setCertificadosData] = useState([]);
   const [experenciaData, setExperenciaData] = useState([]);
-  const videoRef1 = useRef(null);
-  const videoRef2 = useRef(null);
-  const videoRef3 = useRef(null);
-  const videoRef4 = useRef(null);
+  const [activeSection, setActiveSection] = useState('home');
+  const videoRefs = {
+    home: useRef(null),
+    quiensoy: useRef(null),
+    experiencia: useRef(null),
+    proyectos: useRef(null),
+    certificados: useRef(null),
+  };
 
   useEffect(() => {
     // Carga los datos desde los archivos JSON
@@ -30,19 +34,23 @@ function App() {
   }, []);
 
   useEffect(() => {
-    videoRef1.current.classList.remove('hidden');
-    videoRef2.current.classList.add('hidden');
-    videoRef3.current.classList.add('hidden');
-    videoRef4.current.classList.add('hidden');
-  }, []);
+    Object.keys(videoRefs).forEach((key) => {
+      if (videoRefs[key].current) {
+        videoRefs[key].current.classList.add('hidden');
+      }
+    });
+    if (videoRefs[activeSection] && videoRefs[activeSection].current) {
+      videoRefs[activeSection].current.classList.remove('hidden');
+    }
+  }, [activeSection]);
 
   return (
     <Box className="App" id="home">
-      <HeaderHamburguesa />
+      <HeaderHamburguesa setActiveSection={setActiveSection} />
       <div className="video-container">
         <video
-          ref={videoRef1}
-          className="video-background"
+          ref={videoRefs.quiensoy}
+          className="video-background hidden"
           autoPlay
           loop
           muted
@@ -52,7 +60,7 @@ function App() {
           <source src="/video/Shangai.webm" type="video/webm" />
         </video>
         <video
-          ref={videoRef2}
+          ref={videoRefs.experiencia}
           className="video-background hidden"
           autoPlay
           loop
@@ -63,7 +71,7 @@ function App() {
           <source src="/video/Aeropuerto.webm" type="video/webm" />
         </video>
         <video
-          ref={videoRef3}
+          ref={videoRefs.proyectos}
           className="video-background hidden"
           autoPlay
           loop
@@ -74,7 +82,7 @@ function App() {
           <source src="/video/Naval.webm" type="video/webm" />
         </video>
         <video
-          ref={videoRef4}
+          ref={videoRefs.certificados}
           className="video-background hidden"
           autoPlay
           loop
@@ -85,17 +93,17 @@ function App() {
           <source src="/video/Edificio.webm" type="video/webm" />
         </video>
       </div>
-      <div className="quienSoy" id='quiensoy'>
+      <div className="quienSoy" id='quiensoy' onMouseEnter={() => setActiveSection('quiensoy')}>
         <QuienSoy />
         <Tecnologias />
       </div>
-      <div id="experiencia" className="experiencia-container">
+      <div id="experiencia" className="experiencia-container" onMouseEnter={() => setActiveSection('experiencia')}>
         <Experencia data={experenciaData} />
       </div>
-      <div id="proyectos" className="proyectos-container">
+      <div id="proyectos" className="proyectos-container" onMouseEnter={() => setActiveSection('proyectos')}>
         <Proyectos data={proyectosData} />
       </div>
-      <div id="certificados" className="certificados-container">
+      <div id="certificados" className="certificados-container" onMouseEnter={() => setActiveSection('certificados')}>
         <Certificados data={certificadosData} />
       </div>
     </Box>
