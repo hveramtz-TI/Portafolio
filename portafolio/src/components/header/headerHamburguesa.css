@@ -94,10 +94,10 @@
         height: 8vh;
     }
 
-    .header .logo {
-        padding-left: 1rem;
-        height: 8vh; /* Ajusta el tamaño del logo para móviles */
-        width: 12vh;
+    .logo {
+        height: 10vh !important; /* Ajusta el tamaño del logo para móviles */
+        width: fit-content !important;
+        padding: 0% !important;
     }
     
     .menu {
@@ -136,9 +136,6 @@
         padding-right: 4rem !important;
     }
 
-    .logo {
-        height: 50px; /* Ajusta el tamaño del logo para móviles */
-    }
 }
 
 /* Keyframes para la animación */

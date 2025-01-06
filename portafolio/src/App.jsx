@@ -141,7 +141,7 @@ function App() {
           playsInline
           poster="/img/posterVideo/shangai.webp"
         >
-          <source src="/video/battlefieldShangai.mp4" type="video/mp4" />
+          <source src="/video/Shangai.webm" type="video/webm" />
         </video>
         <video
           ref={videoRef2}
@@ -152,7 +152,7 @@ function App() {
           playsInline
           poster="/img/posterVideo/aeropuerto.webp"
         >
-          <source src="/video/battlefieldAeropuerto.mp4" type="video/mp4" />
+          <source src="/video/Aeropuerto.webm" type="video/webm" />
         </video>
         <video
           ref={videoRef3}
@@ -163,7 +163,7 @@ function App() {
           playsInline
           poster="/img/posterVideo/portaviones.webp"
         >
-          <source src="/video/battlefieldNaval.mp4" type="video/mp4" />
+          <source src="/video/Naval.webm" type="video/webm" />
         </video>
         <video
           ref={videoRef4}
@@ -174,7 +174,7 @@ function App() {
           playsInline
           poster="/img/posterVideo/edificios.webp"
         >
-          <source src="/video/Battlefieldedificio.mp4" type="video/mp4" />
+          <source src="/video/Edificio.webm" type="video/webm" />
         </video>
       </div>
       <div className="quienSoy" id='quiensoy'>
