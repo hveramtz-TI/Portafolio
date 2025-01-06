@@ -1,13 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import viteCompression from 'vite-plugin-compression'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    viteCompression({ algorithm: 'brotliCompress' }) // Habilita la compresión Brotli
+  ],
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
-          // Divide las dependencias en diferentes chunks
           react: ['react', 'react-dom'],
           mui: ['@mui/material', '@emotion/react', '@emotion/styled'],
         },
