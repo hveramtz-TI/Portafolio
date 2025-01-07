@@ -56,10 +56,14 @@ html, body {
 }
 
 @media screen and (max-width: 600px) {
-  .quienSoy,
   .proyectos-container,
   .certificados-container,
   .experiencia-container {
     height: 100vh !important;
+  }
+  .quienSoy {
+    height: 120vh;
+    justify-content: flex-start;
+    padding-top: 10vh;
   }
 }
