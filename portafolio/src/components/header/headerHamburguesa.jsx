@@ -18,7 +18,7 @@ function HeaderHamburguesa() {
 
   return (
     <div className="header">
-      <img className='logo' style={{height:'15vh', width:'fit-content',loading:'lazy'}} src={logo} alt="Logo" onClick={() => scrollToSection('quiensoy')} />
+      <img className='logo' style={{height:'100px', width:'170px',loading:'lazy'}} src={logo} alt="Logo" onClick={() => scrollToSection('quiensoy')} />
       <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="bar1"></div>
         <div className="bar2"></div>

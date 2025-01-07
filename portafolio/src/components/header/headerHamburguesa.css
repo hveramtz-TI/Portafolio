@@ -13,12 +13,9 @@
 }
 
 .header .logo {
-    width: 20vh;
-    height: 12vh; /* Ajusta el tamaño del logo */
-    padding-left: 4rem;
-    padding-right: 4rem;
     cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Añade una transición suave */
+    padding-left: 100px;
 }
 
 .header .logo:hover {
@@ -94,10 +91,11 @@
         height: 8vh;
     }
 
-    .logo {
-        height: 10vh !important; /* Ajusta el tamaño del logo para móviles */
-        width: fit-content !important;
-        padding: 0% !important;
+    .header .logo 
+    {
+        padding-left: 0;
+        height: 60px !important;
+        width: 100px !important;
     }
     
     .menu {

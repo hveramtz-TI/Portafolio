@@ -62,13 +62,13 @@ function Tecnologias() {
 
   return (
     <div className="carousel" ref={carouselRef}>
-      {tecnologias.map((tecnologia, index) => (
+      {tecnologias.concat(tecnologias).map((tecnologia, index) => (
         <div key={index} className="carousel-item">
           <a href={tecnologia.link} target="_blank" rel="noopener noreferrer">
             <img
               src={tecnologia.icono}
               alt={tecnologia.nombre}
-              style={{ cursor: 'pointer', width: '8vh', height: '8vh', objectFit: 'contain', loading: 'lazy' }} 
+              style={{ cursor: 'pointer', width: '8vh', height: '8vh', objectFit: 'contain' }} 
             />
           </a>
         </div>
