@@ -25,6 +25,12 @@ function App() {
     proyectos: useRef(null),
     certificados: useRef(null),
   };
+  const sectionRefs = {
+    quiensoy: useRef(null),
+    experiencia: useRef(null),
+    proyectos: useRef(null),
+    certificados: useRef(null),
+  };
 
   useEffect(() => {
     // Carga los datos desde los archivos JSON
@@ -34,6 +40,33 @@ function App() {
   }, []);
 
   useEffect(() => {
+    // Configura el Intersection Observer para detectar secciones visibles
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id); // Actualiza la sección activa
+          }
+        });
+      },
+      { threshold: 0.6 } // El 60% de la sección debe ser visible para activar
+    );
+
+    // Observa todas las secciones
+    Object.values(sectionRefs).forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    // Limpia el observer al desmontar
+    return () => {
+      observer.disconnect();
+    };
+  }, [sectionRefs]);
+
+  useEffect(() => {
+    // Actualiza la visibilidad de los videos
     Object.keys(videoRefs).forEach((key) => {
       if (videoRefs[key].current) {
         videoRefs[key].current.classList.add('hidden');
@@ -93,17 +126,33 @@ function App() {
           <source src="/video/Edificio.webm" type="video/webm" />
         </video>
       </div>
-      <div className="quienSoy" id='quiensoy' onMouseEnter={() => setActiveSection('quiensoy')}>
+      <div
+        ref={sectionRefs.quiensoy}
+        className="quienSoy"
+        id="quiensoy"
+      >
         <QuienSoy />
         <Tecnologias />
       </div>
-      <div id="experiencia" className="experiencia-container" onMouseEnter={() => setActiveSection('experiencia')}>
+      <div
+        ref={sectionRefs.experiencia}
+        id="experiencia"
+        className="experiencia-container"
+      >
         <Experencia data={experenciaData} />
       </div>
-      <div id="proyectos" className="proyectos-container" onMouseEnter={() => setActiveSection('proyectos')}>
+      <div
+        ref={sectionRefs.proyectos}
+        id="proyectos"
+        className="proyectos-container"
+      >
         <Proyectos data={proyectosData} />
       </div>
-      <div id="certificados" className="certificados-container" onMouseEnter={() => setActiveSection('certificados')}>
+      <div
+        ref={sectionRefs.certificados}
+        id="certificados"
+        className="certificados-container"
+      >
         <Certificados data={certificadosData} />
       </div>
     </Box>
