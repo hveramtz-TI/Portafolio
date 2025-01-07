@@ -5,7 +5,7 @@
         "entidad": "Cisco",
         "iconoEntidad": "/img/iconoCisco.svg",
         "expedicion": "jul. 2023",
-        "imagen": "/img/CCNAITN__1_.png",
+        "imagen": "/img/CCNAITN__1_.webp",
         "link": "https://www.credly.com/badges/6c950b17-6399-41f4-a05e-abf395eeb049/linked_in_profile"
     },
     {
@@ -14,25 +14,25 @@
         "entidad": "Microsoft",
         "iconoEntidad": "/img/iconoMicrosoft.png",
         "expedicion": "jun. 2023",
-        "imagen": "/img/AzureSpace.png",
+        "imagen": "/img/AzureSpace.webp",
         "link": "https://www.credly.com/badges/3ce5cd59-12db-446b-99b4-35824c8eef7b/linked_in_profile"
     },
     {
         "id": "3",
         "titulo": "Curso Excel y Power BI - Analisis y Visualizacion de Datos",
         "entidad": "Udemy",
-        "iconoEntidad": "/img/logoUdemy.png",
+        "iconoEntidad": "/img/logoUdemy.webp",
         "expedicion": "feb. 2023",
-        "imagen": "/img/udemy_logo.png",
+        "imagen": "/img/udemy_logo.webp",
         "link": "https://www.udemy.com/certificate/UC-e53a2578-0b64-4250-aa44-e3463e32f195/"
     },
     {
         "id": "4",
         "titulo": "Habilidades Comunicativas: Mejora Tu Comunicacion",
         "entidad": "Udemy",
-        "iconoEntidad": "/img/logoUdemy.png",
+        "iconoEntidad": "/img/logoUdemy.webp",
         "expedicion": "feb. 2023",
-        "imagen": "/img/udemy_logo.png",
+        "imagen": "/img/udemy_logo.webp",
         "link": "https://www.udemy.com/certificate/UC-db8e8e7f-908d-4f53-a091-28e8e79bb189/"
     }
 ]
