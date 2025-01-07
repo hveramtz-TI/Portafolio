@@ -30,6 +30,7 @@ function Certificados({ data }) {
               <CardMedia
                 component="img"
                 height="140"
+                loading='lazy'
                 image={certificado.imagen}
               />
               <CardContent>
@@ -37,7 +38,7 @@ function Certificados({ data }) {
                   {certificado.titulo}
                 </Typography>
                 <Chip
-                  avatar={<Avatar src={certificado.iconoEntidad} sx={{ width: 24, height: 24, borderRadius: '50%', objectFit: 'cover' }} />}
+                  avatar={<Avatar src={certificado.iconoEntidad} sx={{ width: 24, height: 24, borderRadius: '50%', objectFit: 'cover', loading:'lazy' }} />}
                   label={certificado.entidad}
                 />
               </CardContent>

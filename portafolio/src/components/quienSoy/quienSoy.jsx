@@ -28,7 +28,7 @@ function QuienSoy() {
         <div className='quien-soy'>
             <Container sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', padding: 2, gap: 1 }}>
                 <Card className="card-hover" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '50vh', backgroundColor: 'var(--primary-color)', border: '1px solid var(--border-color)', borderRadius: '20px' }}>
-                    <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: '25vh', height: '25vh' }} />
+                    <Avatar src={imgPerfil} alt="Foto de perfil" sx={{ width: '25vh', height: '25vh', loading:'lazy' }} />
                     <CardHeader title="Hector Vera Martinez" subheader="Ingeniero de Ejecucion en Informatica" />
                     <CardContent sx={{ padding: '0px !important' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1, mt: 0 }}>

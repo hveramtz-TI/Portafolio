@@ -52,7 +52,8 @@ function Proyectos({ data }) {
                                 style: {
                                   width: '100%', // Ajusta el ancho de la imagen
                                   height: '100%', // Ajusta la altura de la imagen
-                                  objectFit: 'contain' // Asegura que la imagen se ajuste sin recortarse
+                                  objectFit: 'contain', // Asegura que la imagen se ajuste sin recortarse
+                                  loading: 'lazy', // Añade carga diferida
                                 }
                               }}
                               sx={{
@@ -65,6 +66,7 @@ function Proyectos({ data }) {
                           className="chip" // Aplica la clase base
                           sx={{
                             color: 'white',
+                            loading: 'lazy',
                             border: `1px solid ${tecnologia.color}`, // Usa el color del JSON
                             '&:hover': {
                               backgroundColor: tecnologia.colorHover, // Usa el colorHover del JSON
