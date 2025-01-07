@@ -56,11 +56,6 @@ function QuienSoy() {
                         </Box>
                     </CardContent>
                 </Card>
-                <Grow in={true}>
-                    <Card className="card-hover" sx={{ padding: 1, width: '60vh', height: 'auto', backgroundColor: 'var(--primary-color)', border: '1px solid var(--border-color)', borderRadius: '20px' }}>
-                        <p className='parrafo'>Me apasiona resolver problemas reales a través del desarrollo de software, enfocándome en comprender las necesidades de los usuarios y diseñar soluciones tecnológicas que brinden valor y mejoren la vida de las personas. Disfruto del desarrollo web y móvil, y siempre busco mejorar mis habilidades y conocimientos.</p>
-                    </Card>
-                </Grow>
             </Container>
             <Snackbar 
                 open={open} 
