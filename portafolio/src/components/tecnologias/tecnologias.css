@@ -30,7 +30,6 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  will-change: scroll-position; /* Aceleración por hardware */
 }
 
 .carousel::-webkit-scrollbar {
@@ -43,8 +42,9 @@
   cursor: pointer;
   flex-shrink: 0;
   width: auto;
-  margin: 2vh;
+  margin: 2vh !important;
   padding-top: 1vh;
+  height: 8vh !important;
 }
 
 .carousel-item img {
@@ -65,8 +65,12 @@
     width: 80%;
   }
 
+  .carousel-item
+  {
+    padding-top: 1rem;
+  }
+
   .carousel-item img {
-    max-height: 6vh;
-    max-width: 8vh;
+    height: 6vh;
   }
 }
