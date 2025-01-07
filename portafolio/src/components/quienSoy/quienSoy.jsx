@@ -62,7 +62,7 @@ function QuienSoy() {
         open={open} 
         autoHideDuration={3000} 
         onClose={handleClose}
-        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }} // Aquí está el fragmento seleccionado
       >
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
           Email copiado correctamente!

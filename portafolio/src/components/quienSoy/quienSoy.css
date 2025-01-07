@@ -70,8 +70,8 @@
 
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 600px) {
-  .quien-soy .MuiContainer-root {
-    flex-direction: column;
+  .quien-soy {
+    flex-direction: column !important;
   }
 
   .quien-soy .MuiAvatar-root {
