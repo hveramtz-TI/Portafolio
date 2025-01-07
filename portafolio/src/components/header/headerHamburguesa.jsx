@@ -28,7 +28,7 @@ function HeaderHamburguesa() {
         <ul>
           <li className='secciones' onClick={() => { scrollToSection('proyectos'); setMenuOpen(false); }}>Proyectos</li>
           <li className='secciones' onClick={() => { scrollToSection('certificados'); setMenuOpen(false); }}>Certificados</li>
-          <li className='secciones' onClick={() => { scrollToSection('experiencia'); setMenuOpen(false); }}>Experiencia laboral</li>
+          <li className='secciones' onClick={() => { scrollToSection('experiencia'); setMenuOpen(false); }}>Experiencia</li>
         </ul>
       </nav>
     </div>
