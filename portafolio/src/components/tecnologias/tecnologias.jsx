@@ -11,51 +11,45 @@ function Tecnologias() {
     let interval;
     let isScrolling = false;
 
-    // Función para desplazar el carrusel
     const scrollStep = () => {
       if (carousel && !isScrolling) {
-        carousel.scrollLeft += 2; // Ajusta la velocidad según sea necesario
-        if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-          carousel.scrollLeft = 0; // Reinicia el desplazamiento al llegar al final
+        const speed = window.innerWidth <= 768 ? 4 : 2; // Velocidad móvil/desktop
+        carousel.scrollLeft += speed;
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+          carousel.scrollLeft = 0;
         }
       }
     };
 
-    // Inicia el desplazamiento automático
     const startScroll = () => {
       clearInterval(interval);
-      interval = setInterval(scrollStep, 30); // Ajusta el intervalo si es necesario
+      interval = setInterval(scrollStep, 16); // Más suave (16ms ≈ 60FPS)
     };
 
-    // Detiene el desplazamiento automático
     const stopScroll = () => {
       clearInterval(interval);
       isScrolling = true;
+      setTimeout(() => {
+        isScrolling = false;
+        startScroll();
+      }, 3000); // Pausa 3 segundos tras interacción
     };
 
-    // Reinicia el desplazamiento después de la interacción
-    const resumeScroll = () => {
-      isScrolling = false;
-      startScroll();
-    };
-
-    // Agrega eventos de interacción
+    // Eventos de interacción
     carousel.addEventListener('pointerdown', stopScroll);
-    carousel.addEventListener('pointerup', resumeScroll);
+    carousel.addEventListener('pointerup', startScroll);
     carousel.addEventListener('touchstart', stopScroll);
-    carousel.addEventListener('touchend', resumeScroll);
+    carousel.addEventListener('touchend', startScroll);
 
-    // Inicia el scroll al montar el componente
-    startScroll();
+    startScroll(); // Inicia el scroll al montar
 
-    // Limpieza de eventos y el intervalo
     return () => {
       clearInterval(interval);
       if (carousel) {
         carousel.removeEventListener('pointerdown', stopScroll);
-        carousel.removeEventListener('pointerup', resumeScroll);
+        carousel.removeEventListener('pointerup', startScroll);
         carousel.removeEventListener('touchstart', stopScroll);
-        carousel.removeEventListener('touchend', resumeScroll);
+        carousel.removeEventListener('touchend', startScroll);
       }
     };
   }, []);
@@ -68,7 +62,12 @@ function Tecnologias() {
             <img
               src={tecnologia.icono}
               alt={tecnologia.nombre}
-              style={{ cursor: 'pointer', width: '8vh', height: '8vh', objectFit: 'contain' }} 
+              style={{
+                cursor: 'pointer',
+                width: '8vh',
+                height: '8vh',
+                objectFit: 'contain',
+              }}
             />
           </a>
         </div>
