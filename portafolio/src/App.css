@@ -81,6 +81,6 @@ html, body {
   .quienSoy {
     height: fit-content;
     justify-content: flex-start;
-    padding-top: 5vh;
+    padding-top: 20vh;
   }
 }

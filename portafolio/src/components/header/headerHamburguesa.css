@@ -147,3 +147,34 @@
         transform: translateY(0);
     }
 }
+
+/* Estilos para landscape */
+@media only screen and (orientation: landscape) {
+    /* Ajustes generales */
+    body {
+        font-size: auto;
+    }
+
+    /* Ajustes específicos para el header */
+    .header {
+        height: 15vh;
+    }
+
+    .header .logo {
+        height: auto !important;
+        width: 25vh !important;
+    }
+
+    /* Ajustes específicos para el menú hamburguesa */
+    .hamburguesa-menu {
+        width: auto;
+        height: auto;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Ajustes específicos para los elementos del menú */
+    .hamburguesa-menu li {
+        padding: 10px 0;
+    }
+}
