@@ -22,7 +22,7 @@ function QuienSoy() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/CV-Hector-Vera-EN'; // Reemplaza con la ruta correcta a tu archivo PDF
+    link.href = '/CV-Hector-Vera-EN.pdf'; // Reemplaza con la ruta correcta a tu archivo PDF
     link.download = 'CV.pdf';
     link.click();
   };

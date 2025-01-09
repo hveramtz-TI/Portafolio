@@ -55,15 +55,32 @@ html, body {
   scroll-snap-align: start;
 }
 
+/* Estilos para dispositivos móviles en orientación vertical y horizontal */
 @media screen and (max-width: 600px) {
   .proyectos-container,
   .certificados-container,
   .experiencia-container {
     height: 100vh !important;
   }
+
   .quienSoy {
     height: 120vh;
     justify-content: flex-start;
     padding-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .proyectos-container,
+  .certificados-container,
+  .experiencia-container {
+    height: fit-content !important;
+    padding: 20vh 0vh !important;
+  }
+
+  .quienSoy {
+    height: fit-content;
+    justify-content: flex-start;
+    padding-top: 5vh;
   }
 }

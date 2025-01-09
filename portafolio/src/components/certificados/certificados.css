@@ -165,3 +165,49 @@
     height: 20px !important;
   }
 }
+
+/* Estilos para dispositivos móviles en orientación horizontal */
+@media (max-width: 900px) and (orientation: landscape) {
+  .certificados {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .certificados h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .certificados .MuiCard-root {
+    max-width: 100%;
+    height: auto;
+    border: var(--certificados-card-border);
+    border-radius: var(--certificados-card-border-radius);
+    margin: 5px 0;
+    padding: 5px;
+    background-color: var(--certificados-card-bg-color);
+  }
+
+  .certificados .MuiCardContent-root {
+    padding: 2px !important;
+  }
+
+  .certificados .MuiCardMedia-root {
+    height: 5vh !important;
+  }
+
+  .certificados .MuiChip-root {
+    width: 4vh !important;
+    height: 4vh !important;
+    margin-left: 1vh;
+  }
+
+  .certificados .MuiBox-root {
+    gap: 10px;
+  }
+
+  .MuiAvatar-root {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
