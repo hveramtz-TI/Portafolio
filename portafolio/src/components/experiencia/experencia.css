@@ -10,12 +10,12 @@
 .experiencia-paper {
   background-color: var(--experiencia-bg-color) !important;
   margin-top: 4vh !important;
-  height: 65vh !important;
   border: 3px solid var(--experiencia-border-color) !important;
   border-radius: 10px !important;
   padding: 20px;
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
+  overflow-y: auto;
 }
 
 .experiencia-container.visible {

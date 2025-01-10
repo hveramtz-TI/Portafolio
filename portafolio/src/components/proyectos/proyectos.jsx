@@ -24,16 +24,16 @@ function Proyectos({ data }) {
           <Grid2 container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {data.map((proyecto) => (
               <Grid2 item xs={4} sm={4} md={3} key={proyecto.id}>
-                <Card className="card">
+                <Card className="card" sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#000000', color: 'white' }}>
                   <CardMedia
                     component="img"
-                    height="300px"
                     image={proyecto.imagen ? proyecto.imagen : "https://via.placeholder.com/200"}
                     alt={proyecto.nombre}
                     className="card-media"
                     loading="lazy" // Añade carga diferida
+                    sx={{ height: '100%' }} // Ajusta la altura de la imagen
                   />
-                  <Typography gutterBottom variant="h5" component="div" className="card-title" sx={{ color: 'white', backgroundColor: '#000000' }}>
+                  <Typography gutterBottom variant="h5" component="div" className="card-title" sx={{ color: 'white', backgroundColor: '#000000', translateY: '-50% '}}>
                     {proyecto.nombre}
                   </Typography>
                   <CardContent className="card-content">

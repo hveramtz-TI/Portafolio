@@ -1,7 +1,7 @@
 /* Variables CSS */
 :root {
   --certificados-padding: 100px;
-  --certificados-card-max-width: 250px;
+  --certificados-card-max-width: 300px;
   --certificados-card-height: 300px;
   --certificados-card-border: 5px solid #f0f0f0;
   --certificados-card-border-radius: 20px;
@@ -24,8 +24,6 @@
 }
 
 .certificados .MuiCard-root {
-  max-width: var(--certificados-card-max-width);
-  height: var(--certificados-card-height);
   border: var(--certificados-card-border);
   border-radius: var(--certificados-card-border-radius);
   margin: 0px;
@@ -47,10 +45,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.certificados .MuiCardMedia-root {
-  height: 200px;
 }
 
 @media screen and (max-width: 600px) {

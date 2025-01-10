@@ -23,15 +23,15 @@ function Certificados({ data }) {
         {data.map((certificado) => (
           <Grow in={true} timeout={1000} key={certificado.id}>
             <Card 
-              sx={{ minWidth: '20vh !important', maxWidth: '40vh !important', margin: 2 }}
+              sx={{ margin: 2 ,height:'fit-content', width:'20%'}}
               onClick={() => handleCardClick(certificado.link)}
               style={{ cursor: 'pointer' }}
             >
               <CardMedia
                 component="img"
-                height="140"
                 loading='lazy'
                 image={certificado.imagen}
+                sx={{ maxHeight: 200, objectFit: 'cover' }}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
