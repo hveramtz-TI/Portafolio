@@ -82,8 +82,8 @@
   },
   {
     "id": 4,
-    "nombre": "Sistema de Inventario",
-    "descripcion": "(En Desarrollo). Sistema de inventariado desarrollado en Ionic. Con sistema de escaneo de barras de productos y venta de productos, con uso de gráficos interactivos para la visualización de datos.",
+    "nombre": "Sistema de Tareas Kanban",
+    "descripcion": "(En Desarrollo).",
     "tecnologias": [
       {
         "nombre": "Ionic",
