@@ -9,13 +9,15 @@ function Tecnologias() {
     const carousel = carouselRef.current;
 
     let animationFrame;
+    const scrollSpeed = 1.5; // Velocidad del scroll
 
+    // Función para manejar el scroll infinito
     const scrollStep = () => {
       if (carousel) {
-        const speed = window.innerWidth <= 768 ? 1.5 : 1.5; // Velocidad móvil/desktop ajustada
-        carousel.scrollLeft += speed;
-        if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
-          carousel.scrollLeft = 0;
+        carousel.scrollLeft += scrollSpeed;
+        // Reinicia el scroll cuando llegue al final
+        if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+          carousel.scrollLeft = 0; // Vuelve al inicio del contenido duplicado
         }
         animationFrame = requestAnimationFrame(scrollStep);
       }
@@ -33,10 +35,20 @@ function Tecnologias() {
     };
   }, []);
 
+  const handleItemClick = (link) => {
+    window.open(link, '_blank'); // Abre el enlace en una nueva pestaña
+  };
+
   return (
     <div className="carousel" ref={carouselRef}>
-      {tecnologias.map((tecnologia, index) => (
-        <div key={index} className="carousel-item">
+      {/* Contenido duplicado para lograr el efecto de scroll infinito */}
+      {[...tecnologias, ...tecnologias].map((tecnologia, index) => (
+        <div
+          key={index}
+          className="carousel-item"
+          onClick={() => handleItemClick(tecnologia.link)}
+          style={{ cursor: 'pointer' }}
+        >
           <img src={tecnologia.icono} alt={tecnologia.nombre} />
         </div>
       ))}
