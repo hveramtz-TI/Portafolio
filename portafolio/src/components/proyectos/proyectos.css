@@ -80,7 +80,7 @@
 
   .card:hover {
     transform: scale(1.05);
-    height: 30vh;
+    height: 20vh !important;
   }
 
   .card.reduced {
@@ -118,7 +118,7 @@
 
   .card:hover {
     transform: scale(1.05);
-    height: 25vh;
+    height: 25vh !important;
   }
 
   .card.reduced {
