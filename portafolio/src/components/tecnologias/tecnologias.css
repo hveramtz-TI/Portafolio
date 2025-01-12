@@ -60,6 +60,7 @@
   .carousel {
     height: 8vh;
     width: 90%;
+    margin: 0%;
   }
 
   .carousel-item {
@@ -67,6 +68,7 @@
   }
 
   .carousel-item img {
-    height: 6vh;
+    height:auto;
+    margin: 5px;
   }
 }
