@@ -65,13 +65,13 @@
 
   .carousel-item img {
     height:auto;
-    width: fit-content;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
   .carousel-item {
     padding: 5px;
-    width: fit-content;
+    width: 10vh;
   }
 }
