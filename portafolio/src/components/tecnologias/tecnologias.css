@@ -65,7 +65,13 @@
 
   .carousel-item img {
     height:auto;
+    width: fit-content;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+
+  .carousel-item {
+    padding: 5px;
+    width: fit-content;
   }
 }
