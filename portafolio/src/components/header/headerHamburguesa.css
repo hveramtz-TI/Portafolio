@@ -67,6 +67,7 @@
     cursor: pointer;
     position: relative;
     padding: 0 1rem;
+    font-size:2vh;
 }
 
 .menu ul li::after {
