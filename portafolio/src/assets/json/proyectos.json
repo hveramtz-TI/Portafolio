@@ -79,32 +79,5 @@
     ],
     "url": "https://www.proyectoC.com",
     "imagen": "/img/cbvm.webp"
-  },
-  {
-    "id": 4,
-    "nombre": "Sistema de Tareas Kanban",
-    "descripcion": "(En Desarrollo).",
-    "tecnologias": [
-      {
-        "nombre": "Ionic",
-        "icono": "/img/tecnologiaswebp/ionic.webp",
-        "color": "rgb(63, 81, 181)",
-        "colorHover": "rgba(63, 81, 181, 0.5)"
-      },
-      {
-        "nombre": "Neon",
-        "icono": "/img/tecnologiaswebp/neonserver.webp",
-        "color": "rgb(0, 150, 136)",
-        "colorHover": "rgba(0, 150, 136, 0.5)"
-      },
-      {
-        "nombre": "fly.io",
-        "icono": "/img/tecnologiaswebp/fly.io.webp",
-        "color": "rgb(138, 43, 226, 0.5)",
-        "colorHover": "rgba(138, 43, 226, 0.2)"
-      }
-    ],
-    "url": "https://www.proyectoD.com",
-    "imagen": "/img/enDesarrollo.webp"
   }
 ]

@@ -16,12 +16,12 @@ function Proyectos({ data }) {
     <div className='proyectos'>
       <Box sx={{ flexGrow: 1, padding: { xs: 4, sm: 3, md: 4 } }}>
         <Fade in={true} timeout={1500}>
-          <Typography variant="h4" component="h2" gutterBottom align="center" sx={{ paddingBottom: 2, color: 'white' }}>
+          <Typography variant="h4" component="h2" gutterBottom align="center" sx={{ paddingBottom: 2, color: 'white', paddingLeft: 2 }}>
             Proyectos Destacados
           </Typography>
         </Fade>
         <Grow in={true} timeout={1000}>
-          <Grid2 container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+          <Grid2 container spacing={{ xs: 2, md: 10 }} columns={{ xs: 4, sm: 8, md: 9 }}>
             {data.map((proyecto) => (
               <Grid2 item xs={4} sm={4} md={3} key={proyecto.id}>
                 <Card className="card" sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#000000', color: 'white' }}>
