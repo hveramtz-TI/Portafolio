@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2024 Héctor Vera. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Héctor Vera. Todos los derechos reservados.</p>
         <div className="footer-links">
           <span onClick={() => scrollToSection('quiensoy')}>Quién Soy</span>
           <span onClick={() => scrollToSection('experiencia')}>Experiencia</span>
