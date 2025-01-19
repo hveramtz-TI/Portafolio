@@ -47,7 +47,7 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .certificados .MuiCard-root {
     width: 30vh !important;
     max-height: fit-content !important;
@@ -161,7 +161,7 @@
 }
 
 /* Estilos para dispositivos móviles en orientación horizontal */
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 1600px) {
   .certificados {
     padding-left: 10px;
     padding-right: 10px;
@@ -173,8 +173,8 @@
   }
 
   .certificados .MuiCard-root {
-    max-width: 100%;
-    height: auto;
+    width: 30%;
+    height: fit-content;
     border: var(--certificados-card-border);
     border-radius: var(--certificados-card-border-radius);
     margin: 5px 0;
@@ -205,7 +205,7 @@
     gap: 10px;
   }
 
-  .MuiAvatar-root {
+  .certificados .MuiAvatar-root {
     width: 20px !important;
     height: 20px !important;
   }

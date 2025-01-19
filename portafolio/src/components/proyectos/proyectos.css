@@ -152,16 +152,17 @@
 }
 
 /* Estilos para dispositivos móviles en orientación horizontal */
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 1200px) {
   .card {
-    width: 100%;
-    height: 15vh;
+    width: 80% !important;
+    height: 15vh !important;
     transition: transform 0.3s ease-in-out, height 0.3s ease-in-out !important;
+    margin: auto !important;
   }
 
   .card:hover {
-    transform: scale(1.05);
-    height: 35vh;
+    transform: scale(1.05) !important;
+    height: 35vh !important; 
   }
 
   .card.reduced {
@@ -169,8 +170,8 @@
   }
 
   .card-media {
-    height: 35vh;
-    width: 100%;
+    height: 35vh !important;
+    width: 100% !;
     object-fit: cover;
   }
 

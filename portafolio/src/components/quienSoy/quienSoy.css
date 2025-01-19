@@ -143,8 +143,8 @@
 
   .quien-soy .card-hover .foto-perfil {
     margin: 1vh;
-    width: 15vh !important;
-    height: 15vh !important;
+    width: 20vh !important;
+    height: 20vh !important;
   } 
 
   .quien-soy .card-hover .MuiCardContent-root {
@@ -171,51 +171,16 @@
 }
 
 /* Estilos para dispositivos móviles en orientación horizontal */
-@media (max-width: 900px) and (orientation: landscape) {
-  .quien-soy {
+@media (max-width: 1300px){
+  .quien-soy
+  {
+    display: flex !important;
     flex-direction: column !important;
   }
 
   .quien-soy .MuiAvatar-root {
-    width: auto !important;
-    height: auto !important;
-  }
-
-  .quien-soy .MuiCardHeader-root {
-    padding: 2vh !important;
-  }
-
-  .quien-soy .MuiCardHeader-root .MuiTypography-root {
-    font-size: auto !important;
-  }
-
-  .quien-soy .MuiPaper-root .MuiCardContent-root {
-    padding: 2vh !important;
-  }
-
-  .quien-soy .MuiCardContent-root .MuiChip-root {
-    width: auto !important;
-    height: auto !important;
-  }
-
-  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-icon {
-    margin: 0;
-    padding: 1vh;
-  }
-
-  .quien-soy .MuiCardContent-root .MuiChip-root .MuiChip-label {
-    display: inline !important;
-  }
-
-  .quien-soy .card-hover {
-    width:100vh !important;
-    height: fit-content !important;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .quien-soy .card-hover .foto-perfil {
-    margin: 2vh;
     width: 20vh !important;
+    height: 20vh !important;
   }
+
 }
