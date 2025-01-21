@@ -74,9 +74,14 @@ html, body {
   }
 
   .quienSoy {
-    height: 140vh;
+    height: 130vh;
     justify-content: flex-start;
-    padding-top: 10vh;
+    padding-top: 12vh;
+  }
+
+  .video-background
+  {
+    object-fit: cover;
   }
 }
 
