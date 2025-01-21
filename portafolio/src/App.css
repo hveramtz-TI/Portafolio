@@ -70,13 +70,15 @@ html, body {
   .certificados-container,
   .experiencia-container {
     max-height: 140vh !important;
-    padding: 10vh 0vh !important;
+    padding-top: 10vh !important;
+    padding-bottom: 10vh !important;
   }
 
   .quienSoy {
     height: 130vh;
     justify-content: flex-start;
     padding-top: 12vh;
+    padding-bottom: 12vh;
   }
 
   .video-background
