@@ -13,9 +13,19 @@
   --certificados-typography-border-radius: 10px;
 }
 
+@font-face
+{
+  font-family: 'BF';
+  src : url('./assets/fonts/BF_Modernista-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .certificados h2 {
   font-size: 2rem;
   margin-bottom: 16px;
+  font-family: 'BF', sans-serif !important;
 }
 
 .certificados {
@@ -38,6 +48,12 @@
   padding: var(--certificados-typography-padding);
   border: var(--certificados-typography-border);
   border-radius: var(--certificados-typography-border-radius);
+  font-family: 'BF', sans-serif !important;
+}
+
+.certificados .MuiChip-label
+{
+  font-family: 'BF', sans-serif !important;
 }
 
 .certificados .MuiCardContent-root {

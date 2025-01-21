@@ -7,15 +7,30 @@
   --experiencia-transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+@font-face {
+  font-family: 'BF';
+  src: url('./assets/fonts/BF_Modernista-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .experiencia-paper {
   background-color: var(--experiencia-bg-color) !important;
   margin-top: 4vh !important;
   border: 3px solid var(--experiencia-border-color) !important;
   border-radius: 10px !important;
   padding: 20px;
-  width: 80%;
-  max-width: 1000px;
+  width: 80% !important;
   overflow-y: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experiencia-paper .MuiTypography-root {
+  font-family: 'BF', sans-serif !important;
+  font-size: x-large !important;
 }
 
 .experiencia-container.visible {
@@ -29,10 +44,6 @@
 
 .MuiButton-root {
   background-color: var(--experiencia-button-bg-color) !important;
-}
-
-.experiencia-stepper {
-  width: 100%;
 }
 
 .experiencia-button {
@@ -54,21 +65,43 @@
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
   .experiencia-paper {
-    width: 80%;
-    max-height: 60vh;
+    width: 90%;
+    height: 70%;
+    align-items:flex;
     overflow-y: auto;
+    padding: 10px;
   }
 
   .experiencia-button {
     width: 100%;
     text-align: center;
   }
+
+  .experiencia-stepper {
+    width: 100%;
+  }
+
+  .experiencia-paper .MuiTypography-h4
+  {
+    margin-top: 2rem !important;
+  }
+
+  .experiencia-paper .MuiTypography-root {
+    font-size:  1.2rem!important;
+  }
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
   .experiencia-paper {
-    width: 80%;
+    width: 90%;
     max-height: 100vh;
     overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .experiencia-paper .MuiTypography-root
+  {
+    font-size: 1rem !important;
   }
 }

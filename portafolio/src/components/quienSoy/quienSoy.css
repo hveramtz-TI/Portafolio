@@ -6,10 +6,29 @@
   --transition-duration: 1s;
 }
 
+@font-face
+{
+  font-family: 'BF';
+  src : url('./assets/fonts/BF_Modernista-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Estilos para chips */
 .chip-email, .chip-github, .chip-linkedin {
   border: 1px solid var(--border-color) !important;
   transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease, box-shadow var(--transition-duration) ease !important;
+  font-family: 'BF', sans-serif !important;
+}
+
+.MuiCardHeader-content .MuiTypography-root {
+  font-family: 'BF', sans-serif !important;
+}
+
+.MuiPaper-root h1
+{
+  font-family: 'BF', sans-serif !important;
+  font-weight:normal !important;
 }
 
 .chip-email {

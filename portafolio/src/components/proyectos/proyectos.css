@@ -11,6 +11,16 @@
   --card-content-transition: transform 0.7s ease;
 }
 
+@font-face
+{
+  font-family: 'BF';
+  src : url('./assets/fonts/BF_Modernista-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 .card {
   position: relative;
   overflow: hidden;
@@ -30,6 +40,11 @@
   transition: transform 0.3s ease;
 }
 
+.proyectos .MuiChip-root
+{
+  font-family: 'BF', sans-serif !important;
+}
+
 .card-title {
   position: absolute;
   top: 0;
@@ -42,6 +57,7 @@
   transform: var(--card-title-transform);
   transition: var(--card-content-transition);
   text-align: center;
+  font-family: 'BF', sans-serif !important;
 }
 
 .card-content {
@@ -55,6 +71,22 @@
   transform: var(--card-content-transform);
   transition: var(--card-content-transition);
   overflow-y: auto;
+}
+
+.card-content .MuiTypography-root
+{
+  font-family: 'BF', sans-serif !important;
+  font-size: medium;
+}
+
+.card .MuiTypography-root
+{
+  font-family: 'BF', sans-serif !important;
+}
+
+.proyectos .MuiTypography-root
+{
+  font-family: 'BF', sans-serif !important;
 }
 
 .card:hover .card-media {
