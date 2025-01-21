@@ -67,7 +67,7 @@ html, body {
   .proyectos-container,
   .certificados-container,
   .experiencia-container {
-    height: fit-content !important;
+    max-height: 120vh !important;
     padding: 30vh 0vh !important;
   }
 
