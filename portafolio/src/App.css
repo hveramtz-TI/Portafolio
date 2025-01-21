@@ -68,13 +68,13 @@ html, body {
   .certificados-container,
   .experiencia-container {
     max-height: 120vh !important;
-    padding: 30vh 0vh !important;
+    padding-bottom: 20vh !important;
   }
 
   .quienSoy {
     padding: 3vh;
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 20vh;
     height: fit-content;
     justify-content: flex-start;
   }
