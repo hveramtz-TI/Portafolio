@@ -69,11 +69,12 @@ html, body {
   .proyectos-container,
   .certificados-container,
   .experiencia-container {
-    max-height: 100vh !important;
+    max-height: 140vh !important;
+    padding: 10vh 0vh !important;
   }
 
   .quienSoy {
-    height: 120vh;
+    height: 140vh;
     justify-content: flex-start;
     padding-top: 10vh;
   }

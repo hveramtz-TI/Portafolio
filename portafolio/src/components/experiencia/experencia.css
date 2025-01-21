@@ -65,7 +65,7 @@
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
   .experiencia-paper {
-    width: 90%;
+    width: 70% !important;
     height: 60%;
     align-items:flex;
     overflow-y: auto;
@@ -81,27 +81,15 @@
     width: 100%;
   }
 
-  .experiencia-paper .MuiTypography-h4
-  {
-    margin-top: 2rem !important;
-  }
-
   .experiencia-paper .MuiTypography-root {
     font-size:  1.2rem!important;
   }
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 900px) {
   .experiencia-paper {
     width: 90%;
-    max-height: 100vh;
     overflow-y: auto;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .experiencia-paper .MuiTypography-root
-  {
-    font-size: 1rem !important;
+    height: 60%;
   }
 }

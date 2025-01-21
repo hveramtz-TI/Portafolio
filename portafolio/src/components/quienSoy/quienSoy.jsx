@@ -63,9 +63,9 @@ function QuienSoy() {
         </CardContent>
       </Card>
       <Card className="card-hover" sx={{ width: '700px', height:'fit-content', padding:'2vh', backgroundColor: 'var(--primary-color)', border: '1px solid var(--border-color)', borderRadius: '20px' }}>
-        <h1 className='parrafo' style={{ margin: 0, padding: '1rem', fontSize: '2.3vh', lineHeight: '1.5', color: 'var(--text-color)' }}>
+        <p className='parrafo' style={{ margin: 0, padding: '1rem', fontSize: '2.3vh', lineHeight: '1.5', color: 'var(--text-color)' }}>
           Me apasiona resolver problemas reales a través del desarrollo de software, enfocándome en comprender las necesidades de los usuarios y diseñar soluciones tecnológicas que brinden valor y mejoren la vida de las personas. Disfruto del desarrollo web y móvil, y siempre busco mejorar mis habilidades y conocimientos.
-        </h1>
+        </p>
         <Chip className='chip-cv' label="CV" onClick={handleDownloadCV} sx={{ width:'100%'}} />
       </Card>
       <Snackbar 
