@@ -19,12 +19,16 @@ const classMap = {
 
 function QuienSoy() {
   const [open, setOpen] = useState(false);
-
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/CV-Hector-Vera-EN.pdf'; // Reemplaza con la ruta correcta a tu archivo PDF
-    link.download = 'CV.pdf';
-    link.click();
+    const linkES = document.createElement('a');
+    linkES.href = '/CV-Hector-Vera-ES.pdf'; // Reemplaza con la ruta correcta a tu archivo PDF en español
+    linkES.download = 'CV-Hector-Vera-ES.pdf';
+    linkES.click();
+
+    const linkEN = document.createElement('a');
+    linkEN.href = '/CV-Hector-Vera-EN.pdf'; // Reemplaza con la ruta correcta a tu archivo PDF en inglés
+    linkEN.download = 'CV-Hector-Vera-EN.pdf';
+    linkEN.click();
   };
 
   const handleClick = (contacto) => {
